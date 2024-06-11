@@ -1,8 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"pcub:common_join",
 		"fcub:common_join",
-		"pcub:bedrock/join"
+		"fcub:bedrock_join"
 	]
 }

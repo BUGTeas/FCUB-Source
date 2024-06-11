@@ -1,8 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"pcub:common_join",
 		"fcub:common_join",
-		"pcub:java/join"
+		"fcub:java_join"
 	]
 }
