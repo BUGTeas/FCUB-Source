@@ -1,5 +1,5 @@
-#元素银行激活
-scoreboard objectives add fcub_element_store_enable dummy
+execute unless score #system pcub_api_version matches 1 run say [fcub] 当前盘灵无界基础必要组件版本不匹配，可能会出现兼容性错误。
+
 #强制玩家进服游戏模式
 scoreboard objectives add fcub_gamemode dummy
 #隐藏进服提示
