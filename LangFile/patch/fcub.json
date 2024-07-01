@@ -1,0 +1,88 @@
+{
+	"geyser":{
+		"fallback":{},
+		"base":{
+			"res.pack.100.requested":"§r ",
+			"please.download.and.add_it":"§r "
+		},
+		"conversion":{
+			"fcub.notice.bug":"§e§l请仔细浏览游玩指南网页§r （群公告里有链接）， 否则您将无法从容应对各种 Bug！！",
+			"res_pack.100.requested":"§c请退出重进以恢复正常!",
+			"please.download.and_add_it":"玩家数据加载错误",
+			"please.add.dedicated.res_pack.100":"\n§c§l由于您被误判为 Java 版玩家，导致玩家数据加载错误，需要退出重新进入才能恢复正常。"
+		},
+		"tw":{}
+	},
+	"bedrock":{
+		"fallback":{
+			"pack.name":"§h幻域无界专用资源包 v1.0",
+			"pack.description":"§c§l禁止用于其他地图！ §r仅限盘灵无界互通服务端使用！"
+		},
+		"base":{},
+		"conversion":{
+			"pack.name":"§h幻域无界专用资源包 v1.0",
+			"pack.description":"§c§l禁止用于其他地图！ §r仅限盘灵无界互通服务端使用！",
+			"fcub.menu.get_element.0":"§8此条目未开启",
+			"fcub.menu.get_element.1":"§4补领便携元素银行菜单",
+			"fcub.menu.get_dark_fight.0":"§8此条目未开启",
+			"fcub.menu.get_dark_fight.10":"§4补领诡秘挑战工具菜单"
+		},
+		"tw":{}
+	},
+	"cross":{
+		"fallback":{},
+		"base":{},
+		"conversion":{},
+		"tw":{}
+	},
+	"common":{
+		"fallback":{
+			"fcub.bedrock.player": "§a[Bedrock]§e",
+			"fcub.java.player": "§b[Java]§e"
+		},
+		"base":{
+			"fcub.bedrock.player": "§a[基岩]§e"
+		},
+		"conversion":{},
+		"tw":{
+			"fcub.bedrock.player": "§a[Bedrock]§e"
+		},
+		"hk":{}
+	},
+	"java":{
+		"fallback":{
+			"res_pack.102.requested":"UNSUPPORT LANGUAGE",
+			"please.download.and_add_it":"Set the game language to Chinese",
+			"please.add.dedicated.res_pack.100":"\nUNSUPPORT LANGUAGE! / 不支持的语言！\nPlease set the game language to Chinese.\n请将游戏语言设置为中文（大陆/香港/台湾）。"
+		},
+		"base":{
+			"res_pack.100.requested":"§r",
+			"please.download.and_add_it":"§r",
+			"please.add.dedicated.res_pack.100":" "
+		},
+		"conversion":{
+			"res_pack.11.requested":"请升级您的资源包",
+			"please.add.dedicated.res_pack.11":"资源包已更新至 v1.1，请从群聊下载并手动升级。",
+			"fcub.notice.bug":"§c§l由于您被误判为基岩版玩家，导致配置出错。这会影响到您的正常游戏，需要退出重新进入才能恢复正常。",
+			"fcub.notice.notsupport_offhand":"§c§l由于您被误判基岩版玩家，导致配置出错。这会影响到您的正常游戏，需要退出重新进入才能恢复正常。",
+			"fcub.menu.title":"● §l服务器特色功能§r\n\n",
+			"fcub.menu.forcestack":"§4【强制叠放背包物品】§r\n\n",
+			"fcub.menu.forcestack.tips":"当物品（尤其是丹药）叠放出现异常时可使用此功能。\n§7该功能也可以通过命令：“/pcub stack”实现。§r",
+			"fcub.menu.disabled":"§8【本条目未启用】§r\n\n",
+			"fcub.menu.more":"如需调整连续投掷和按住潜行发动技能，请输入命令 “/pcub” 了解更多。",
+			"fcub.menu.element":"§4【补领便携元素银行菜单】§r\n\n",
+			"fcub.menu.element.tips":"由 暁山水鏡 创作的通用扩展「便携元素银行」实现。\n可以在这里存放五种元素，节省背包空间。",
+			"fcub.menu.dark_tag":"§4【补领诡秘挑战工具菜单】§r\n\n",
+			"fcub.menu.skin":"§4【从皮肤站设置皮肤】§r\n\n",
+			"fcub.menu.skin.tips":"使用当前账户在 LittleSkin 上对应角色的皮肤，通过命令“/bskin help”了解详情。\n从二周目开始，通过 LittleSkin 外置登录的玩家需要手动在服务器内设置皮肤，否则皮肤将不可见。\n皮肤加载依靠 MineSkin 接口，小概率会因为被墙而导致皮肤加载失败，且皮肤可能不定期失效，需要再次重新设置。",
+			"pl.info.newest_version":"§6§l幻域无界专用资源包 v1.0 已启用",
+			"pl.info.instance5.end2":"§6虽然四圣兽事件终于落幕了，但是你总觉得整件事似乎另有隐情",
+			"pl.sign.training_job2_15.1.text1":"服务器装有叠放插件",
+			"pl.sign.training_job2_15.1.text2":"可以自由移动丹药",
+			"pl.sign.training_job2_15.1.text3":"而不需要按 Shift",
+			"pl.sign.training_job2_15.1.text4":"（仅限 Java 版）"
+		},
+		"tw":{},
+		"hk":{}
+	}
+}

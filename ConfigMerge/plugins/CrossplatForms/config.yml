@@ -1,0 +1,47 @@
+commands:
+  #补领便携元素银行菜单
+  get-element-menu:
+    method: register
+    command: get-element-menu
+    actions:
+      - commands: "console; execute as %player_uuid% run function fcub:get_element_menu"
+    permission: crossplatforms.command.open
+  #补领诡秘挑战工具菜单
+  get-dark-menu10:
+    method: register
+    command: get-dark-menu10
+    actions:
+      - commands: "console; execute as %player_uuid% if score @s dark_start matches 10 run function fcub:get_dark_menu"
+    permission: crossplatforms.command.open
+  get-dark-menu0:
+    method: register
+    command: get-dark-menu0
+    actions:
+      - form: option-disabled
+    permission: crossplatforms.command.open
+
+  #帮助命令覆盖
+  help:
+    method: register
+    command: help
+    actions:
+      - commands:
+        - "console; execute as %player_uuid% run tellraw @s[tag=player_java] [{\"text\":\"常用命令如下：\\n/tell <玩家名> <内容> —— 向指定玩家发言，消息只有对方可见\\n/linkaccount <玩家名> \"},{\"text\":\"—— 绑定基岩版玩家\"},{\"text\":\"\\n/kill-self —— 强制服下鹤顶丹，即使它不在背包\"}]"
+        - "console; execute as %player_uuid% run tellraw @s[tag=player_bedrock] [{\"text\":\"常用命令如下：\\n/tell <玩家名> <内容> —— 向指定玩家发言，消息只有对方可见\\n/linkaccount <玩家名> \"},{\"text\":\"<验证码> —— 绑定 Java 版玩家\\n/geyser advancements —— 打开成就与任务（进度）\\n/geyser offhand —— 强制将主手物品放至副手\"},{\"text\":\"\\n/kill-self —— 强制服下鹤顶丹，即使它不在背包\"}]"
+    permission: crossplatforms.command.open
+
+  #快速杀除
+  kill-self:
+    method: register
+    command: kill-self
+    actions:
+      - commands: "console; execute as %player_uuid% run kill @s"
+    permission: crossplatforms.command.open
+
+  #一键设置皮肤
+  setskin:
+    method: register
+    command: setskin
+    actions:
+      - commands: player; bskin set %player_name%
+    permission: crossplatforms.command.open
