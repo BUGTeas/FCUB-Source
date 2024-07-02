@@ -41,7 +41,8 @@
 			"fcub.java.player": "§b[Java]§e"
 		},
 		"base":{
-			"fcub.bedrock.player": "§a[基岩]§e"
+			"fcub.bedrock.player": "§a[基岩]§e",
+			"fcub.java.player": "§b[Java]§e"
 		},
 		"conversion":{},
 		"tw":{
