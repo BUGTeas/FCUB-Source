@@ -39,7 +39,7 @@ data modify storage pcub:fcub book_content append value '{"translate":"fcub.menu
 #诡秘词条
 execute if score @s dark_start matches 10 run data modify storage pcub:fcub book_content append value '{"translate":"fcub.menu.dark_tag","clickEvent":{"action":"run_command","value":"/get-dark-menu10"}}'
 execute unless score @s dark_start matches 10 run data modify storage pcub:fcub book_content append value '{"translate":"fcub.menu.disabled"}'
-#元素银行
+#加载皮肤
 data modify storage pcub:fcub book_content append value '{"translate":"fcub.menu.skin","hoverEvent":{"action": "show_text","value":{"translate":"fcub.menu.skin.tips"}},"clickEvent":{"action":"run_command","value":"/setskin"}}'
 #有关专用命令
 data modify storage pcub:fcub book_content append value '{"translate":"fcub.menu.more"}'
