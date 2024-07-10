@@ -32,7 +32,7 @@ public class FCUBListener implements Listener {
     //检查Floodgate插件
     boolean fgVaild = getServer().getPluginManager().getPlugin("floodgate") != null;
     //登录失败后记录，以免踢出时弹出消息
-    Player loginFaildPlayer = null;
+    UUID loginFaildPlayer = null;
     //玩家进服事件
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
@@ -44,7 +44,7 @@ public class FCUBListener implements Listener {
         boolean isGeyser = geyserVaild && GeyserApi.api().isBedrockPlayer(playerUUID);
         boolean isFloodgate = fgVaild && fgInstance.isFloodgatePlayer(playerUUID);
         String edition = (isFloodgate || isGeyser) ? "bedrock" : "java";
-        if (fgVaild && !isFloodgate && geyserVaild && isGeyser) loginFaildPlayer = player;
+        if (fgVaild && !isFloodgate && geyserVaild && isGeyser) loginFaildPlayer = playerUUID;
         else {
             Set<String> tags = player.getScoreboardTags();
             boolean hideMsg = false;
@@ -62,15 +62,15 @@ public class FCUBListener implements Listener {
                     //if (!(isFloodgate && !fgPlayer.isLinked())) targetPlayer.performCommand("bskin quiet " + targetName);
                 }
             }.runTaskLater(Main.getPlugin(Main.class), 0L);
+            getLogger().info("\n[" + edition.toUpperCase().charAt(0) + edition.substring(1) + "] " + playerDisplay + "（" + playerName + "）加入了游戏");
         }
-        getLogger().info("\n[" + edition.toUpperCase().charAt(0) + edition.substring(1) + "] " + playerDisplay + "（" + playerName + "）加入了游戏");
         event.setJoinMessage(null);
     }
     //玩家退出事件
     @EventHandler
     public void onPlayerQuit(PlayerQuitEvent event) {
         Player player = event.getPlayer();
-        if(loginFaildPlayer == player) loginFaildPlayer = null;
+        if(loginFaildPlayer == player.getUniqueId()) loginFaildPlayer = null;
         else {
             UUID playerUUID = player.getUniqueId();
             String playerName = player.getName();
