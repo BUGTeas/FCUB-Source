@@ -45,3 +45,11 @@ commands:
     actions:
       - commands: player; bskin set %player_name%
     permission: crossplatforms.command.open
+
+  #查看各副本开箱次数
+  chest-count:
+    method: register
+    command: chest-count
+    actions:
+      - commands: "console; execute as %player_uuid% at @s run function floors:number"
+    permission: crossplatforms.command.open

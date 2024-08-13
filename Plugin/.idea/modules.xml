@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FCUB.main.iml" filepath="$PROJECT_DIR$/.idea/modules/FCUB.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.pcub.fcub.FCUB.main.iml" filepath="$PROJECT_DIR$/.idea/modules/org.pcub.fcub.FCUB.main.iml" />
     </modules>
   </component>
 </project>

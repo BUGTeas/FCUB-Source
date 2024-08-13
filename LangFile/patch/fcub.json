@@ -52,31 +52,32 @@
 	},
 	"java":{
 		"fallback":{
-			"res_pack.102.requested":"UNSUPPORT LANGUAGE",
+			"res_pack.11.requested":"UNSUPPORT LANGUAGE",
 			"please.download.and_add_it":"Set the game language to Chinese",
-			"please.add.dedicated.res_pack.100":"\nUNSUPPORT LANGUAGE! / 不支持的语言！\nPlease set the game language to Chinese.\n请将游戏语言设置为中文（大陆/香港/台湾）。"
+			"please.add.dedicated.res_pack.11":"\nUNSUPPORT LANGUAGE! / 不支持的语言！\nPlease set the game language to Chinese.\n请将游戏语言设置为中文（大陆/香港/台湾）。"
 		},
 		"base":{
-			"res_pack.100.requested":"§r",
+			"res_pack.11.requested":"§r",
 			"please.download.and_add_it":"§r",
-			"please.add.dedicated.res_pack.100":" "
+			"please.add.dedicated.res_pack.11":" "
 		},
 		"conversion":{
-			"res_pack.11.requested":"请升级您的资源包",
-			"please.add.dedicated.res_pack.11":"资源包已更新至 v1.1，请从群聊下载并手动升级。",
+			"res_pack.12.requested":"请升级您的资源包",
+			"please.add.dedicated.res_pack.12":"资源包已更新至 v1.2，请从群聊下载并手动升级。",
 			"fcub.notice.bug":"§c§l由于您被误判为基岩版玩家，导致配置出错。这会影响到您的正常游戏，需要退出重新进入才能恢复正常。",
 			"fcub.notice.notsupport_offhand":"§c§l由于您被误判基岩版玩家，导致配置出错。这会影响到您的正常游戏，需要退出重新进入才能恢复正常。",
 			"fcub.menu.title":"● §l服务器特色功能§r\n\n",
-			"fcub.menu.forcestack":"§4【强制叠放背包物品】§r\n\n",
+			"fcub.menu.forcestack":"§4【强制叠放背包物品】§r\n",
 			"fcub.menu.forcestack.tips":"当物品（尤其是丹药）叠放出现异常时可使用此功能。\n§7该功能也可以通过命令：“/pcub stack”实现。§r",
-			"fcub.menu.disabled":"§8【本条目未启用】§r\n\n",
-			"fcub.menu.more":"如需调整连续投掷和按住潜行发动技能，请输入命令 “/pcub” 了解更多。",
-			"fcub.menu.element":"§4【补领便携元素银行菜单】§r\n\n",
+			"fcub.menu.disabled":"§8【本条目未启用】§r\n",
+			"fcub.menu.more":"\n如需调整连续投掷和按住潜行发动技能，请输入命令 “/pcub” 了解更多。",
+			"fcub.menu.element":"§4【补领便携元素银行菜单】§r\n",
 			"fcub.menu.element.tips":"由 暁山水鏡 创作的通用扩展「便携元素银行」实现。\n可以在这里存放五种元素，节省背包空间。",
-			"fcub.menu.dark_tag":"§4【补领诡秘挑战工具菜单】§r\n\n",
-			"fcub.menu.skin":"§4【修复基岩版皮肤显示】§r\n\n",
-			"fcub.menu.skin.tips":"通过 LittleSkin 登录的玩家其皮肤通常不会在基岩版显示。\n需要手动点击此按钮进行修复，包括更换皮肤后也同样。\n§7（正版登录不受此影响）",
-			"pl.info.newest_version":"§6§l幻域无界专用资源包 v1.0 已启用",
+			"fcub.menu.dark_tag":"§4【补领诡秘挑战工具菜单】§r\n",
+			"fcub.menu.skin":"§4【修复基岩版皮肤显示】§r\n",
+			"fcub.menu.skin.tips":"如果您通过 LittleSkin 登录进服，且希望基岩版玩家可以看见你的皮肤，请点击此按钮进行修复。\n§7（正版登录无需使用）",
+			"fcub.menu.chest_count":"§4【查看各副本开箱次数】§r\n",
+			"pl.info.newest_version":"§6§l幻域无界专用资源包 v1.1 已启用",
 			"pl.info.instance5.end2":"§6虽然四圣兽事件终于落幕了，但是你总觉得整件事似乎另有隐情",
 			"pl.sign.training_job2_15.1.text1":"服务器装有叠放插件",
 			"pl.sign.training_job2_15.1.text2":"可以自由移动丹药",
