@@ -49,7 +49,7 @@ execute if score #system instance5_intick matches 120 run tellraw @a[x=-184,y=98
 execute if score #system instance5_intick matches 100 run effect clear @a[x=-184,y=98,z=-821,distance=..40] minecraft:night_vision
 execute if score #system instance5_intick matches 100 run summon lightning_bolt -184 98 -826
 execute if score #system instance5_intick matches 100 run tellraw @a[x=-184,y=98,z=-821,distance=..40] {"translate": "pl.info.instance5.inplay4"}
-execute if score #system instance5_intick matches 82 run effect give @a[x=-184,y=98,z=-821,distance=..40] minecraft:blindness 25 0
+execute if score #system instance5_intick matches 82 run effect give @a[x=-184,y=98,z=-821,distance=..40] minecraft:darkness 25 0
 execute if score #system instance5_intick matches 82 run kill @e[x=-184,y=98,z=-821,distance=..40,type=armor_stand,limit=1]
 execute if score #system instance5_intick matches 52 run playsound pl.instance5_pangu1 ambient @a[x=-184,y=98,z=-821,distance=..40] -189 112 -832 10 1 1
 execute if score #system instance5_intick matches 52 run tellraw @a[x=-184,y=98,z=-821,distance=..40] {"translate": "pl.info.instance5.inplay5"}
@@ -68,7 +68,7 @@ execute if score #system instance5_intick matches 1 run forceload add -184 -832
 execute if score #system instance5_intick matches 1 run setblock -184 99 -832 minecraft:stone_button
 execute if score #system instance5_intick matches 1 run forceload remove -184 -832
 
-execute if score #system instance5_intick matches 1 unless score #system final_battle_stage matches 6 unless score #system pvpevent matches 1.. if entity @e[x=-184,y=98,z=-821,distance=..40,type=player,scores={race=0,finish_shen_hide=1}] if entity @e[x=-184,y=98,z=-821,distance=..40,type=player,scores={race=1,finish_yao_hide=1}] if entity @e[x=-184,y=98,z=-821,distance=..40,type=player,scores={race=2,finish_xian_hide=1}] if entity @e[x=-184,y=98,z=-821,distance=..40,type=player,scores={race=3,finish_zhan_hide=1}] if entity @e[x=-184,y=98,z=-821,distance=..40,type=player,scores={race=4,finish_ren_hide=1}] run scoreboard players set #system fcub_final_state 1
+execute if score #system instance5_intick matches 1 unless score #system final_battle_stage matches 6 run scoreboard players set #system fcub_final_state 1
 
 execute if score #system instance5_intick matches 1 if score #system fcub_final_state matches 1 run scoreboard players set @a[x=-184,y=98,z=-821,distance=..40] fcub_final_state 1
 
