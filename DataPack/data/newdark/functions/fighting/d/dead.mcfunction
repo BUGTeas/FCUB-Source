@@ -4,6 +4,7 @@ tellraw @s [{"translate":"dark.words.end.b"}]
 
 scoreboard players set @s gold_chest 1
 tp @s 392 14 -2065 0 0
+scoreboard players set @s feather_mainland 1
 function newdark:out
 #等级奖励，每1级诡秘挑战等级增加3%的概率获得一颗罪之石
 
