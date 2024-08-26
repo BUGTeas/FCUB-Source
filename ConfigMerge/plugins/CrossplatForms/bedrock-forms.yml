@@ -82,7 +82,7 @@ forms:
         actions:
           - commands: "player; get-test-bless-be%objective_score_{check_race_test}%"
       #查看各副本开箱次数
-      - text: "查看各副本开箱次数"
+      - text: "fcub.menu.floor_count"
         image: "textures/element/forms/optional3/buy/goldkey"
         actions:
           - commands: "console; execute as %player_uuid% at @s run function floors:number"

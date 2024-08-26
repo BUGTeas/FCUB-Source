@@ -1,0 +1,64 @@
+{
+	"format_version": "1",
+	"items": {
+		"minecraft:paper": [
+			{
+				"custom_model_data": 101,
+				"name": "fcub_guide_stack_example_splash_potion"
+			}, {
+				"custom_model_data": 102,
+				"name": "fcub_guide_stack_example_snowball"
+			}, {
+				"custom_model_data": 103,
+				"name": "fcub_guide_stack_example_rabbit_stew"
+			}, {
+				"custom_model_data": 104,
+				"name": "fcub_guide_stack_example_potion"
+			}, {
+				"custom_model_data": 105,
+				"name": "fcub_guide_stack_example_mushroom_stew"
+			}, {
+				"custom_model_data": 106,
+				"name": "fcub_empty"
+			}
+		]
+	},
+	"blocks": {
+		"minecraft:chiseled_bookshelf": {
+			"name": "fcub_guide_show",
+			"geometry": "geometry.normal_block",
+			"state_overrides": {
+				"facing=north,slot_0_occupied=false,slot_1_occupied=false,slot_2_occupied=false,slot_3_occupied=false,slot_4_occupied=false,slot_5_occupied=false": {
+					"material_instances": { "*": {
+						"texture": "fcub_guide_trade_showinfo",
+						"face_dimming": true, "ambient_occlusion": true
+					} }
+				},
+				"facing=north,slot_0_occupied=true,slot_1_occupied=false,slot_2_occupied=false,slot_3_occupied=false,slot_4_occupied=false,slot_5_occupied=false": {
+					"material_instances": { "*": {
+						"texture": "fcub_guide_stack_move_common",
+						"face_dimming": true, "ambient_occlusion": true
+					} }
+				},
+				"facing=north,slot_0_occupied=false,slot_1_occupied=true,slot_2_occupied=false,slot_3_occupied=false,slot_4_occupied=false,slot_5_occupied=false": {
+					"material_instances": { "*": {
+						"texture": "fcub_guide_stack_move_touch",
+						"face_dimming": true, "ambient_occlusion": true
+					} }
+				},
+				"facing=north,slot_0_occupied=false,slot_1_occupied=false,slot_2_occupied=true,slot_3_occupied=false,slot_4_occupied=false,slot_5_occupied=false": {
+					"material_instances": { "*": {
+						"texture": "fcub_guide_stack_drop",
+						"face_dimming": true, "ambient_occlusion": true
+					} }
+				},
+				"facing=north,slot_0_occupied=false,slot_1_occupied=false,slot_2_occupied=false,slot_3_occupied=true,slot_4_occupied=false,slot_5_occupied=false": {
+					"material_instances": { "*": {
+						"texture": "fcub_guide_stack_merge",
+						"face_dimming": true, "ambient_occlusion": true
+					} }
+				}
+			}
+		}
+	}
+}

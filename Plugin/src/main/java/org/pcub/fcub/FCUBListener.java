@@ -43,6 +43,12 @@ public class FCUBListener implements Listener {
         FloodgateApi fgInstance = (!fgVaild) ? null : FloodgateApi.getInstance();
         boolean isGeyser = geyserVaild && GeyserApi.api().isBedrockPlayer(playerUUID);
         boolean isFloodgate = fgVaild && fgInstance.isFloodgatePlayer(playerUUID);
+        //检查玩家是否绑定账户
+        fgInstance.getPlayerLink().isLinkedPlayer(playerUUID).thenAccept( isLinked -> {
+            if (isLinked) player.addScoreboardTag("linked_account");
+            else player.removeScoreboardTag("linked_account");
+        });
+        //进服提示区分客户端
         String edition = (isFloodgate || isGeyser) ? "bedrock" : "java";
         if (fgVaild && !isFloodgate && geyserVaild && isGeyser) loginFaildPlayer = playerUUID;
         else {
@@ -70,7 +76,8 @@ public class FCUBListener implements Listener {
     @EventHandler
     public void onPlayerQuit(PlayerQuitEvent event) {
         Player player = event.getPlayer();
-        if(loginFaildPlayer == player.getUniqueId()) loginFaildPlayer = null;
+        //如果正常登录，则在退出时显示消息
+        if(loginFaildPlayer != null && loginFaildPlayer.compareTo(player.getUniqueId()) == 0) loginFaildPlayer = null;
         else {
             UUID playerUUID = player.getUniqueId();
             String playerName = player.getName();

@@ -15,16 +15,17 @@
 	},
 	"bedrock":{
 		"fallback":{
-			"pack.name":"§h幻域无界专用资源包 v1.0",
+			"pack.name":"§h幻域无界专用资源包 v1.1",
 			"pack.description":"§c§l禁止用于其他地图！ §r仅限盘灵无界互通服务端使用！"
 		},
 		"base":{},
 		"conversion":{
-			"pack.name":"§h幻域无界专用资源包 v1.0",
+			"pack.name":"§h幻域无界专用资源包 v1.1",
 			"pack.description":"§c§l禁止用于其他地图！ §r仅限盘灵无界互通服务端使用！",
 			"fcub.menu.get_element.0":"§8此条目未开启",
 			"fcub.menu.get_element.1":"§4补领便携元素银行菜单",
 			"fcub.menu.get_dark_fight.0":"§8此条目未开启",
+			"fcub.menu.floor_count":"查看各副本开箱次数",
 			"fcub.menu.get_dark_fight.10":"§4补领诡秘挑战工具菜单"
 		},
 		"tw":{}
@@ -77,7 +78,7 @@
 			"fcub.menu.skin":"§4【修复基岩版皮肤显示】§r\n",
 			"fcub.menu.skin.tips":"如果您通过 LittleSkin 登录进服，且希望基岩版玩家可以看见你的皮肤，请点击此按钮进行修复。\n§7（正版登录无需使用）",
 			"fcub.menu.chest_count":"§4【查看各副本开箱次数】§r\n",
-			"pl.info.newest_version":"§6§l幻域无界专用资源包 v1.1.1 已启用",
+			"pl.info.newest_version":"§6§l幻域无界专用资源包 v1.1.2 已启用",
 			"pl.info.instance5.end2":"§6虽然四圣兽事件终于落幕了，但是你总觉得整件事似乎另有隐情",
 			"pl.sign.training_job2_15.1.text1":"服务器装有叠放插件",
 			"pl.sign.training_job2_15.1.text2":"可以自由移动丹药",
