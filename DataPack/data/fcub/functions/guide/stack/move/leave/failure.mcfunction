@@ -1,0 +1,1 @@
+tellraw @s [{"text": "请先从箱子中取出丹药放入背包。", "color": "red"}]

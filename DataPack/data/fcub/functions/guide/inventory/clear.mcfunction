@@ -1,0 +1,1 @@
+execute unless entity @s[tag=inventory_cleared] run function fcub:guide/inventory/clear/confirm

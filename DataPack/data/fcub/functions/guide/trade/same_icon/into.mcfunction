@@ -1,0 +1,2 @@
+give @s minecraft:orange_dye{id:"fcub:guide_trade_source",display:{Name:'{"text":"原材料","italic":false,"color":"gold"}',Lore:['{"text":"这是NPC正需要的物品","color":"gray"}','{"text":"用它来进行交易","color":"gray"}']}} 3
+give @s minecraft:orange_dye{id:"fcub:guide_trade_source",display:{Name:'{"text": "废料", "italic": false, "color": "gray"}',Lore:['{"text": "虽然图标和原材料一样，但这并不是NPC想要的","color":"gray"}','{"text":"如果它被自动放入槽位也不用担心，交易时扣取的依旧是原材料","color":"gray"}']}} 6

@@ -1,0 +1,1 @@
+tellraw @s [{"text": "你换取了一个不正确的核心。\n", "color": "red"},{"text": "如果物品耗尽，可以点击左侧的告示牌重置交易过程。", "color": "gray", "italic": true}]

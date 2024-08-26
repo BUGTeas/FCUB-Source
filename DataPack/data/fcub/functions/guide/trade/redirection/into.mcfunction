@@ -1,0 +1,2 @@
+give @s minecraft:clay_ball{id:"fcub:guide_trade_source",display:{Name:'{"text":"范例铜锭","italic":false,"color":"light_purple"}'}} 16
+give @s minecraft:paper{id:"fcub:guide_trade_source",display:{Name:'{"text":"范例票券","italic":false,"color":"blue"}'}} 16

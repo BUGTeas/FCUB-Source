@@ -1,0 +1,12 @@
+execute positioned -347 202 -1448 run function pld:npcs/final_story/1
+execute positioned -346 202 -1449 run function pld:npcs/final_story/2
+execute positioned -345 202 -1449 run function pld:npcs/final_story/3
+execute positioned -346 202 -1448 run function pld:npcs/final_story/4
+execute positioned -345 202 -1448 run function pld:npcs/final_story/5
+execute positioned -344 202 -1448 run function pld:npcs/final_story/6
+execute positioned -345 202 -1447 run function pld:npcs/final_story/7
+execute positioned -344 202 -1447 run function pld:npcs/final_story/8
+execute positioned -344 202 -1446 run function pld:npcs/final_story/9
+execute positioned -343 202 -1447 run function pld:npcs/final_story/10
+execute positioned -342 202 -1446 run function pld:npcs/final_story/11
+execute positioned -343 202 -1446 run function pld:npcs/final_story/12
