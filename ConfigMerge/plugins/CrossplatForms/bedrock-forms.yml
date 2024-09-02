@@ -25,6 +25,12 @@ forms:
         actions:
           - commands: "player; pcub option combat"
           #- commands: "player; slotset-be%objective_score_{job}%"
+      #强制重新加载区块
+      - text: "强制重新加载区块\n修复个别区块不加载的问题"
+        actions:
+          - commands:
+            - "execute as %player_uuid% at @s run function reload_chunk:check"
+          - form: "reloadChunk_requireBot_%objective_score_{pcub_reloadChunk_check}%"
       #强制叠放背包物品
       - text: "pcub.menubook.stack"
         image: "textures/menubook/stack"
@@ -96,3 +102,17 @@ forms:
         image: "textures/menubook/pcub"
         actions:
           - form: version-be
+  
+  #强制重新加载区块（当玩家不在大陆内且周围没有玩家）
+  reloadChunk_requireBot_-1:
+    type: simple_form
+    title: "重新加载区块"
+    content: "请尽量避免在单刷副本时使用此功能， 否则可能会出现问题。"
+    buttons:
+      - text: "尽可能安全地刷新\n（使用假人占位）"
+        actions:
+          - commands: 
+            - "bot create tp_placeholder tp_holder %player_world% %player_x% %player_y% %player_z%"
+            - "execute as %player_uuid% run tag @s add tp_out"
+            - "schedule function reload_chunk:wait_for_placeholder 10"
+      - text: "gui.close"

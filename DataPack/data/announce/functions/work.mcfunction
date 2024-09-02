@@ -8,7 +8,7 @@ scoreboard players add #system fcub_autoAnnounce_index 1
 		[{"text":"§a[Tips] §r请确保梦回盘灵及服务器专用资源包都已在本地添加，以免游戏出现异常。"}]
 #2
 	execute if score #system fcub_autoAnnounce_index matches 2 run tellraw @a[tag=finish_select,scores={feather_mainland=1}] \
-		{"text":"§a[Tips] §r由于平衡性问题本服务器不提供战役玩法, 若您需要功勋点，可以做出贡献 (包括但不限于反馈 Bug、提出建议), 一经核实奖励 400 点起步！"}
+		{"text":"§a[Tips] §r由于平衡性问题本服务器不提供战役玩法, 若您需要功勋点，可以做出贡献 (包括但不限于反馈 Bug、提出建议、举报挂狗), 一经核实奖励 400 点起步！"}
 #3
 	execute if score #system fcub_autoAnnounce_index matches 3 run tellraw @a[tag=finish_select,scores={feather_mainland=1}] \
 		{"text":"§a[Tips] §r服务器现有的 DLC 内容 (均为最新版): 罪如歌、 便捷元素银行、 盘灵无界互通开服方案"}
@@ -31,4 +31,7 @@ scoreboard players add #system fcub_autoAnnounce_index 1
 #8
 	execute if score #system fcub_autoAnnounce_index matches 8 run tellraw @a[tag=finish_select,scores={feather_mainland=1}] \
 		{"text":"§a[Tips] §r钱庄的红箱中拥有可扩展的储物空间, 也可以在信箱中收取定时补给及落下的副本奖励, 还能查看各属性值等等。"}
-execute if score #system fcub_autoAnnounce_index matches 8 run scoreboard players reset #system fcub_autoAnnounce_index
+#9
+	execute if score #system fcub_autoAnnounce_index matches 9 run tellraw @a[tag=player_bedrock,tag=finish_select,scores={feather_mainland=1}] \
+		{"text":"§a[Tips] §r如果出现连接正常但个别区块不加载的情况， 可以使用菜单书中的“强制重新加载区块”功能解决。"}
+execute if score #system fcub_autoAnnounce_index matches 9 run scoreboard players reset #system fcub_autoAnnounce_index
