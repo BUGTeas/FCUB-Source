@@ -13,10 +13,10 @@ execute as @e[tag=dark_random] store result score #system 1 run data get entity 
 kill @e[tag=dark_random]
 scoreboard players set #temp 1 100
 scoreboard players operation #system 1 %= #temp 1
-scoreboard players operation @s 1 = #system dark_hard
-scoreboard players operation @s 1 *= #system 3
-execute if score @s 1 >= #system 1 run give @s fire_charge{HideFlags:63,Enchantments:[{id:"minecraft:protection",lvl:1s}],id:"dlc:legend_stone",display:{Name:'{"translate":"in.dark.stone.name"}',Lore:['{"translate":"pl.lore.rare6"}','{"translate":"in.dark.stone.lore.a"}','{"translate":"in.dark.stone.lore.b"}','{"translate":"in.dark.stone.lore.c"}','{"translate":"in.dark.stone.lore.d"}','{"translate":"in.dark.stone.lore.e"}','{"translate":"in.dark.stone.lore.f"}','{"translate":"in.dark.stone.lore.g"}']}} 1
-execute if score @s 1 >= #system 1 run tellraw @s "由于诡秘挑战等级奖励机制,你获得一颗罪之石"
+scoreboard players operation #temp 1 = #system dark_hard
+scoreboard players operation #temp 1 *= #system 3
+execute if score #temp 1 >= #system 1 run give @s fire_charge{HideFlags:63,Enchantments:[{id:"minecraft:protection",lvl:1s}],id:"dlc:legend_stone",display:{Name:'{"translate":"in.dark.stone.name"}',Lore:['{"translate":"pl.lore.rare6"}','{"translate":"in.dark.stone.lore.a"}','{"translate":"in.dark.stone.lore.b"}','{"translate":"in.dark.stone.lore.c"}','{"translate":"in.dark.stone.lore.d"}','{"translate":"in.dark.stone.lore.e"}','{"translate":"in.dark.stone.lore.f"}','{"translate":"in.dark.stone.lore.g"}']}} 1
+execute if score #temp 1 >= #system 1 run tellraw @s "由于诡秘挑战等级奖励机制,你获得一颗罪之石"
 #恢复数值
 scoreboard players set #system 1 1
 
