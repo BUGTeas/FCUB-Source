@@ -15,4 +15,4 @@ tag @s add tp_back
 #传送到无人区
 tp @s 1600 1000 -1200
 #延迟执行
-schedule function reload_chunk:tp_back_delay 2
+$schedule function reload_chunk:tp_back_delay $(delay)
