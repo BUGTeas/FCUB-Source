@@ -102,6 +102,24 @@ forms:
         image: "textures/menubook/pcub"
         actions:
           - form: version-be
+          
+  element_menubook--1-3:
+    type: simple_form
+    title: "你共存入了 §l%objective_score_{element_money}%§r 个铜钱"
+    content: "您当前在大陆之外， 只能使用剩余存款购买以下物品。 （仅本服务器支持）"
+    buttons:
+      - text: "§4金钥匙 §4[500 铜钱]"
+        image: "textures/element/forms/optional3/buy/goldkey"
+        actions:
+          - form: element_optional3-buy-goldkey
+      - text: "§5银钥匙 §4[100 铜钱]"
+        image: "textures/element/forms/optional3/buy/sliverkey"
+        actions:
+          - form: element_optional3-buy-sliverkey
+      - text: "§9铜钥匙 §4[50 铜钱]"
+        image: "textures/element/forms/optional3/buy/copperkey"
+        actions:
+          - form: element_optional3-buy-copperkey
   
   #强制重新加载区块（当玩家不在大陆内且周围没有玩家）
   reloadChunk_requireBot_-1:
