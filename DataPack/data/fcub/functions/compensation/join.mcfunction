@@ -1,3 +1,5 @@
+#初始化结构（需要手动加载）
+	setblock 1313 67 38 minecraft:structure_block[mode=load]{author:"?",ignoreEntities:1b,integrity:1.0f,metadata:"",mirror:"NONE",mode:"LOAD",name:"fcub:compensation/join_room",posX:-9,posY:1,posZ:1,powered:0b,rotation:"NONE",seed:0L,showair:0b,showboundingbox:1b,sizeX:11,sizeY:6,sizeZ:8}
 #清除大陆标签
 	tag @s remove finish_select
 #记录原等级
