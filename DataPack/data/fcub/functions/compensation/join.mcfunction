@@ -7,6 +7,9 @@
 #清除等级
 	experience set @s 0 points
 	experience set @s 0 levels
+#判断丹师
+	scoreboard players set @s[nbt={Inventory:[{tag:{limit:2,act:1}}]}] fcub_comp_race2 1
+	scoreboard players set @s[nbt={Inventory:[{id:"minecraft:splash_potion"}]}] fcub_comp_race2 1
 #暂时清空背包
 	function fcub:guide/inventory/clear
 #传送到提示区

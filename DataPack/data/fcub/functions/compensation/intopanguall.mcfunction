@@ -7,9 +7,6 @@
 	function fcub:compensation/xp with storage pcub:fcub compensation.temp
 #还原背包
 	function fcub:guide/inventory/restore
-#判断丹师
-	scoreboard players set @s[nbt={Inventory:[{tag:{limit:2}}]}] fcub_comp_race2 1
-	scoreboard players set @s[nbt={Inventory:[{id:"minecraft:splash_potion"}]}] fcub_comp_race2 1
 #判断试炼
 	#盘古
 		scoreboard players set @s[nbt={Inventory:[{tag:{id:"panling:shen_test_bless"}}]}] shen_test_all 1
