@@ -23,3 +23,8 @@ scoreboard objectives add fcub_player_dead deathCount
 scoreboard objectives add fcub_autoAnnounce_index dummy
 #启动
 function announce:work
+
+#玩家补偿
+scoreboard objectives add fcub_compensation dummy
+scoreboard objectives add fcub_comp_backup_level dummy
+scoreboard objectives add fcub_comp_race2 dummy

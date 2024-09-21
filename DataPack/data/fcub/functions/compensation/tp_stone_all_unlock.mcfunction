@@ -1,0 +1,16 @@
+scoreboard players set @s dragon_check 1
+scoreboard players set @s bird_check 1
+scoreboard players set @s tiger_check 1
+scoreboard players set @s turtle_check 1
+scoreboard players set @s tp_east1 1
+scoreboard players set @s tp_east2 1
+scoreboard players set @s tp_east3 1
+scoreboard players set @s tp_west1 1
+scoreboard players set @s tp_west2 1
+scoreboard players set @s tp_west3 1
+scoreboard players set @s tp_south1 1
+scoreboard players set @s tp_south2 1
+scoreboard players set @s tp_south3 1
+scoreboard players set @s tp_north1 1
+scoreboard players set @s tp_north2 1
+scoreboard players set @s tp_north3 1

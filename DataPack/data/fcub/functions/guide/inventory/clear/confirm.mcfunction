@@ -47,5 +47,5 @@ function fcub:guide/inventory/process/store {container:"inventory.26",slot:26}
 item replace entity @s enderchest.1 from block 0 -1 0 container.0
 #清空缓存箱
 data modify block 0 -1 0 Items set value []
-tellraw @s {"text":"您的背包被暂时清空， 离开教程后自动恢复。", "color":"gold"}
+tellraw @s[scores={race=0..}] {"text":"您的背包被暂时清空， 离开教程后自动恢复。", "color":"gold"}
 tag @s add inventory_cleared

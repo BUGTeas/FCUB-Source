@@ -34,4 +34,7 @@ scoreboard players add #system fcub_autoAnnounce_index 1
 #9
 	execute if score #system fcub_autoAnnounce_index matches 9 run tellraw @a[tag=player_bedrock,tag=finish_select,scores={feather_mainland=1}] \
 		{"text":"§a[Tips] §r如果出现连接正常但个别区块不加载的情况， 可以使用菜单书中的“强制重新加载区块”功能解决。"}
-execute if score #system fcub_autoAnnounce_index matches 9 run scoreboard players reset #system fcub_autoAnnounce_index
+#10
+	execute if score #system fcub_autoAnnounce_index matches 10 run tellraw @a[tag=finish_select,scores={feather_mainland=1,fcub_compensation=2}] \
+		{"text":"§a[Tips] §r您的玩家数据曾遭丢失, 如遇 Bug 请及时向腐竹 (BugTea) 寻求帮助, 曾经获得功勋值奖励的玩家请主动联系以补回。"}
+execute if score #system fcub_autoAnnounce_index matches 10 run scoreboard players reset #system fcub_autoAnnounce_index
