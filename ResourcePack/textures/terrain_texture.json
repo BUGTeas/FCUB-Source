@@ -1,0 +1,19 @@
+{
+	"texture_data" : {
+		"fcub_guide_trade_showinfo": {
+			"textures": "textures/fcub/blocks/guide/trade/showinfo"
+		},
+		"fcub_guide_stack_move_common": {
+			"textures": "textures/fcub/blocks/guide/stack/move/common"
+		},
+		"fcub_guide_stack_move_touch": {
+			"textures": "textures/fcub/blocks/guide/stack/move/touch"
+		},
+		"fcub_guide_stack_drop": {
+			"textures": "textures/fcub/blocks/guide/stack/drop"
+		},
+		"fcub_guide_stack_merge": {
+			"textures": "textures/fcub/blocks/guide/stack/merge"
+		}
+	}
+}

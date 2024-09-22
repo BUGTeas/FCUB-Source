@@ -1,0 +1,11 @@
+{
+	"parent": "minecraft:item/template_banner",
+	"overrides": [
+	{
+		"predicate": {
+			"custom_model_data": 0
+		},
+		"model": "jg:item/qizhi"
+	}
+  ]
+}

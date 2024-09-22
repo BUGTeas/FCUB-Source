@@ -1,0 +1,22 @@
+{
+  "texture_data": {
+    "fcub_guide_stack_example_splash_potion": {
+      "textures": "textures/fcub/items/guide/stack/example/splash_potion"
+    },
+    "fcub_guide_stack_example_snowball": {
+      "textures": "textures/fcub/items/guide/stack/example/snowball"
+    },
+    "fcub_guide_stack_example_rabbit_stew": {
+      "textures": "textures/fcub/items/guide/stack/example/rabbit_stew"
+    },
+    "fcub_guide_stack_example_potion": {
+      "textures": "textures/fcub/items/guide/stack/example/potion"
+    },
+    "fcub_guide_stack_example_mushroom_stew": {
+      "textures": "textures/fcub/items/guide/stack/example/mushroom_stew"
+    },
+    "fcub_empty": {
+      "textures": "textures/items/dye_powder_white"
+    }
+  }
+}

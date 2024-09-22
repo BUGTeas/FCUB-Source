@@ -1,0 +1,32 @@
+﻿{
+  "pack": {
+    "pack_format": 15,
+    "supported_formats": [ 15, 34 ],
+    "description": [
+      {
+        "text": "幻域无界专用",
+        "color": "#00ffaa",
+        "bold": true
+      },{
+        "text":"，需叠加在梦回盘灵包之上，",
+        "color": "#ffaa00",
+        "bold": false
+      },{
+        "text":"勿在其他服务器内使用！",
+        "color": "#ffff00",
+        "bold": true
+      },{
+        "text": "v1.1.2",
+        "color": "#808080",
+        "bold": false
+      }
+    ]
+  },
+  "overlays": { 
+    "entries": [
+      {"formats": [ 16, 34 ], "directory": "16_and_newer"},
+      {"formats": [ 20, 34 ], "directory": "20_and_newer"},
+      {"formats": [ 22, 34 ], "directory": "22_and_newer"}
+    ]
+  }
+}
