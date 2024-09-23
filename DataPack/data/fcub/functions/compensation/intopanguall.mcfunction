@@ -104,6 +104,8 @@
 	scoreboard players set @s[scores={test_bless=10..}] temp 1
 	scoreboard players set @s[scores={check_stone=1..}] temp 1
 	execute if score @s temp matches 1 run function pld:system/menubook/update/main
+#末影箱解锁
+    function fcub:compensation/chest_unlock
 #提醒玩家
 	function fcub:compensation/notice
 #给书本

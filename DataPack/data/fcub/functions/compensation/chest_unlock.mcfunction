@@ -1,0 +1,23 @@
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:0b}] run scoreboard players set @s chests_enabled 1
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:1b}] run scoreboard players set @s chests_enabled 2
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:2b}] run scoreboard players set @s chests_enabled 3
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:3b}] run scoreboard players set @s chests_enabled 4
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:4b}] run scoreboard players set @s chests_enabled 5
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:5b}] run scoreboard players set @s chests_enabled 6
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:6b}] run scoreboard players set @s chests_enabled 7
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:7b}] run scoreboard players set @s chests_enabled 8
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:8b}] run scoreboard players set @s chests_enabled 9
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:9b}] run scoreboard players set @s chests_enabled 10
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:10b}] run scoreboard players set @s chests_enabled 11
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:11b}] run scoreboard players set @s chests_enabled 12
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:12b}] run scoreboard players set @s chests_enabled 13
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:13b}] run scoreboard players set @s chests_enabled 14
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:14b}] run scoreboard players set @s chests_enabled 15
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:15b}] run scoreboard players set @s chests_enabled 16
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:16b}] run scoreboard players set @s chests_enabled 17
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:17b}] run scoreboard players set @s chests_enabled 18
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:18b}] run scoreboard players set @s chests_enabled 19
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:19b}] run scoreboard players set @s chests_enabled 20
+execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:20b}] run scoreboard players set @s chests_enabled 21
+tellraw @s {"text":"已恢复您的钱庄末影箱解锁空间！"}
+scoreboard players set @s fcub_comp_chest_unlock 1
