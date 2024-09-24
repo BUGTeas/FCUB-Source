@@ -7,18 +7,6 @@
 	function fcub:compensation/xp with storage pcub:fcub compensation.temp
 #还原背包
 	function fcub:guide/inventory/restore
-#判断试炼
-	#盘古
-		scoreboard players set @s[nbt={Inventory:[{tag:{id:"panling:shen_test_bless"}}]}] shen_test_all 1
-		execute if score @s shen_test_all matches 1 run scoreboard players set @s test_bless 10
-	#女娲
-		scoreboard players set @s[nbt={Inventory:[{tag:{id:"panling:ren_test_bless"}}]}] ren_test_all 1
-		execute if score @s ren_test_all matches 1 run scoreboard players set @s test_bless 14
-	#蚩尤
-		scoreboard players set @s[nbt={Inventory:[{tag:{id:"panling:zhan_test_bless"}}]}] zhan_test_all 1
-		execute if score @s zhan_test_all matches 1 run scoreboard players set @s test_bless 13
-	#菜单书状态
-		execute if score @s test_bless matches 10.. run scoreboard players set @s check_race_test 1
 #补偿
 	#保底
 		#梦盘
@@ -101,9 +89,9 @@
 		execute if entity @s[advancements={pld:other/tp_stone_all_unlock=true}] run function fcub:compensation/tp_stone_all_unlock
 #更新菜单书
 	scoreboard players reset @s temp
-	scoreboard players set @s[scores={test_bless=10..}] temp 1
 	scoreboard players set @s[scores={check_stone=1..}] temp 1
-	execute if score @s temp matches 1 run function pld:system/menubook/update/main
+#试炼祝福恢复
+	function fcub:compensation/test_restore
 #末影箱解锁
     function fcub:compensation/chest_unlock
 #提醒玩家
