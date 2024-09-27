@@ -5,7 +5,7 @@ execute if score #system fcub_final_state matches 2 run kick @s[scores={fcub_fin
     tellraw @s [{"color":"#ffaa00","bold":true,"text":"欢迎游玩幻域无界 · 盘灵古域 (梦回盘灵) 互通服务器！\n"},{"color":"#ffffff","bold":false,"text":"请关注官方群聊：490989498，了解服务器玩法和最新状况！"}]
     execute as @s[gamemode=survival] run gamemode adventure
 #玩家补偿
-    execute unless score @s fcub_compensation matches 1.. unless entity @s[nbt={Inventory:[{}]}] run scoreboard players set @s fcub_compensation 3
+    execute unless score @s fcub_compensation matches 1.. run scoreboard players set @s[tag=!finish_select] fcub_compensation 3
     execute unless score @s fcub_compensation matches 2.. run function fcub:compensation/join
     #末影箱解锁
         execute if score @s fcub_compensation matches 2 unless score @s fcub_comp_chest_unlock matches 1 run function fcub:compensation/chest_unlock
