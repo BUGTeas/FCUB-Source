@@ -92,8 +92,12 @@
 	scoreboard players set @s[scores={check_stone=1..}] temp 1
 #试炼祝福恢复
 	function fcub:compensation/test_restore
+#恢复箭袋
+	function fcub:compensation/arrowpack_restore
 #末影箱解锁
     function fcub:compensation/chest_unlock
+#更新菜单书
+	execute if score @s temp matches 1 run function pld:system/menubook/update/main
 #提醒玩家
 	function fcub:compensation/notice
 #给书本

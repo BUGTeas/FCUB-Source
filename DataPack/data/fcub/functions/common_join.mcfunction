@@ -9,8 +9,13 @@ execute if score #system fcub_final_state matches 2 run kick @s[scores={fcub_fin
     execute unless score @s fcub_compensation matches 2.. run function fcub:compensation/join
     #末影箱解锁
         execute if score @s fcub_compensation matches 2 unless score @s fcub_comp_chest_unlock matches 1 run function fcub:compensation/chest_unlock
-    #试炼祝福恢复
+    #判定菜单书更新
 	    scoreboard players reset @s temp
+    #试炼祝福恢复
         execute if score @s fcub_compensation matches 2 unless score @s fcub_comp_test_restore matches 1 run function fcub:compensation/test_restore
+    #恢复箭袋
+        execute if score @s fcub_compensation matches 2 unless score @s fcub_comp_update matches 1.. run function fcub:compensation/arrowpack_restore
+    #菜单书更新
+        execute if score @s temp matches 1 run function pld:system/menubook/update/main
 #末影箱初始化
     execute unless data entity @s EnderItems[{Slot:0b}] unless data entity @s EnderItems[{Slot:9b}] run item replace entity @s enderchest.0 with minecraft:gray_stained_glass_pane{clickable:1,reset_self_id:1,HideFlags:63,display:{Name:'{"translate":"pl.chest_menu.nothing"}'}}
