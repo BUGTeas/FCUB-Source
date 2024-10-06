@@ -2,11 +2,18 @@
 /*.mcpack
 /*.zip
 # 软链接内容
+# 语言文件
 /ResourcePackJava/assets/*/lang/*.json
 /ResourcePack/texts/*.lang
+# 材质向上兼容
 /ResourcePackJava/16_and_newer
 /ResourcePackJava/20_and_newer
 /ResourcePackJava/22_and_newer
 /ResourcePackJava/assets/minecraft/textures/gui/title/background
 /ResourcePackJava/assets/minecraft/textures/gui/title/edition.png.mcmeta
 /ResourcePackJava/assets/minecraft/textures/gui/title/minecraft.png.mcmeta
+# 丹药优化修改
+/ResourcePackJava/assets/minecraft/models/item/potion.json
+/ResourcePackJava/assets/minecraft/models/item/splash_potion.json
+/ResourcePackJava/assets/pcub/models
+/ResourcePackJava/assets/pcub/textures
