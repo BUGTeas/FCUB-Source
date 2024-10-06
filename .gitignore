@@ -1,4 +1,12 @@
+# 最终成品文件
 /*.mcpack
 /*.zip
+# 软链接内容
 /ResourcePackJava/assets/*/lang/*.json
 /ResourcePack/texts/*.lang
+/ResourcePackJava/16_and_newer
+/ResourcePackJava/20_and_newer
+/ResourcePackJava/22_and_newer
+/ResourcePackJava/assets/minecraft/textures/gui/title/background
+/ResourcePackJava/assets/minecraft/textures/gui/title/edition.png.mcmeta
+/ResourcePackJava/assets/minecraft/textures/gui/title/minecraft.png.mcmeta
