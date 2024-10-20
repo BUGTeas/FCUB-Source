@@ -9,7 +9,7 @@ execute if entity @s[tag=ifslot] unless entity @s[nbt={Inventory:[{tag:{id:"panl
 #购买
 execute if entity @s[tag=ifslot] run scoreboard players remove @s element_money 40
 execute if entity @s[tag=ifslot] run clear @s glass{id:"panling:placeholder_c"}
-execute if entity @s[tag=ifslot] at @s run summon item ~ ~1 ~ {Item:{id:"minecraft:potion",Count:15b,tag:{id:"panling:td1",CustomPotionColor:16262179,CustomPotionEffects:[{Id:6b,Amplifier:1b}],display:{Name:'{"translate":"pl.item.name.td1"}'}}}}
+execute if entity @s[tag=ifslot] at @s run summon item ~ ~1 ~ {Item:{id:"minecraft:potion",Count:15b,tag:{id: "panling:td1", CustomPotionColor: 16262179, custom_potion_effects: [{id: "minecraft:instant_health", amplifier: 1b}], CustomModelData: 80, display: {Name: '{"translate":"pl.item.name.td1"}', Lore: ['[{"text":"§9"},{"translate":"pcub.potion.effect.instant_health"},{"translate":"pcub.potion.potency.1"}]']}}}}
 execute if entity @s[tag=ifslot] run tellraw @s {"text":"已购买一般疗伤丹15剂","color":"green"}
 kill @e[type=item,nbt={Item:{id:"minecraft:glass",tag:{id:"panling:placeholder_c"}}}]
 tag @s remove ifslot
