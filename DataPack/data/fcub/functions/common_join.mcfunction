@@ -15,6 +15,8 @@ execute if score #system fcub_final_state matches 2 run kick @s[scores={fcub_fin
         execute if score @s fcub_compensation matches 2 unless score @s fcub_comp_test_restore matches 1 run function fcub:compensation/test_restore
     #恢复箭袋
         execute if score @s fcub_compensation matches 2 unless score @s fcub_comp_update matches 1.. run function fcub:compensation/arrowpack_restore
+    #恢复羽毛
+        execute if score @s fcub_compensation matches 2 unless score @s fcub_comp_update matches 2.. run function fcub:compensation/feather_restore
     #菜单书更新
         execute if score @s temp matches 1 run function pld:system/menubook/update/main
 #末影箱初始化

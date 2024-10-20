@@ -94,6 +94,8 @@
 	function fcub:compensation/test_restore
 #恢复箭袋
 	function fcub:compensation/arrowpack_restore
+#恢复羽毛
+	function fcub:compensation/feather_restore
 #末影箱解锁
     function fcub:compensation/chest_unlock
 #更新菜单书
