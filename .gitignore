@@ -6,9 +6,7 @@
 /ResourcePackJava/assets/*/lang/*.json
 /ResourcePack/texts/*.lang
 # 材质向上兼容
-/ResourcePackJava/16_and_newer
-/ResourcePackJava/20_and_newer
-/ResourcePackJava/22_and_newer
+/ResourcePackJava/*_and_newer
 /ResourcePackJava/assets/minecraft/textures/gui/title/background
 /ResourcePackJava/assets/minecraft/textures/gui/title/edition.png.mcmeta
 /ResourcePackJava/assets/minecraft/textures/gui/title/minecraft.png.mcmeta
