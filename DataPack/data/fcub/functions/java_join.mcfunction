@@ -1,7 +1,8 @@
 #更新
 execute as @s[nbt={Inventory:[{tag:{title:"§6菜单", author:"§6天道"}}]}] unless entity @s[nbt={Inventory:[{tag:{title:"§6菜单", author:"§6天道",fcubver:"110"}}]}] run function pld:system/menubook/update/main
 #进服提示附加
-tellraw @s [{"color":"#ffff00","bold":true,"text":"请务必在本地添加专用资源包，以免游戏出现异常！！！\n"},{"color":"#ffffff","bold":false,"text":"如果资源包未加载，您将在右侧看到一串代码："},{"color":"#ffffff","bold":false,"translate":"please.add.dedicated.res_pack.11"}]
-#服务器识别客户端不正确时，会弹出文字提示
-title @s subtitle {"color":"#ffff00","translate":"please.download.and_add_it"}
-title @s title {"color":"#ff5555","translate":"res_pack.11.requested"}
+#服务器识别客户端不正确，或资源包版本不匹配，会弹出文字提示
+tag @s add fcub_notice_later
+schedule function fcub:notice_later/check 5
+title @s subtitle {"translate": "fcub.check_java.rp_request_113.subtitle", "fallback": "§e可在游玩指南/群文件中找到"}
+title @s title {"translate": "fcub.check_java.rp_request_113.title","fallback": "§c请添加最新版专用资源包"}

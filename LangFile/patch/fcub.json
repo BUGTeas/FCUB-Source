@@ -2,14 +2,14 @@
 	"geyser":{
 		"fallback":{},
 		"base":{
-			"res.pack.100.requested":"§r ",
-			"please.download.and.add_it":"§r "
+			"fcub.check_bedrock.rp_request_113.title":" ",
+			"fcub.check_bedrock.rp_request_113.subtitle":" "
 		},
 		"conversion":{
-			"fcub.notice.bug":"§e§l请仔细浏览游玩指南网页§r （群公告里有链接）， 否则您将无法从容应对各种 Bug！！",
-			"res_pack.100.requested":"§c请退出重进以恢复正常!",
-			"please.download.and_add_it":"玩家数据加载错误",
-			"please.add.dedicated.res_pack.100":"\n§c§l由于您被误判为 Java 版玩家，导致玩家数据加载错误，需要退出重新进入才能恢复正常。"
+			"fcub.check_bedrock.rp_request_113.message":"§e§l请仔细浏览游玩指南网页§r （群公告里有链接）， 否则您将无法从容应对各种 Bug！！",
+			"fcub.check_java.rp_request_113.title":"§c玩家数据加载错误",
+			"fcub.check_java.rp_request_113.subtitle":"§e请退出重进以恢复正常",
+			"fcub.check_java.rp_request_113.message":"§e\n由于您被误判为 Java 版玩家，\n导致玩家数据加载错误，\n需要退出重新进入才能恢复正常。\n\n"
 		},
 		"tw":{}
 	},
@@ -37,36 +37,40 @@
 		"tw":{}
 	},
 	"common":{
-		"fallback":{
-			"fcub.bedrock.player": "§a[Bedrock]§e",
-			"fcub.java.player": "§b[Java]§e"
-		},
+		"fallback":{},
 		"base":{
-			"fcub.bedrock.player": "§a[基岩]§e",
-			"fcub.java.player": "§b[Java]§e"
+			"fcub.bedrock.player": "§a[基岩]§e "
 		},
 		"conversion":{},
 		"tw":{
-			"fcub.bedrock.player": "§a[Bedrock]§e"
+			"fcub.bedrock.player": "§a[Bedrock]§e "
 		},
-		"hk":{}
+		"hk":{
+			"fcub.bedrock.player": "§a[Bedrock]§e "
+		}
 	},
 	"java":{
 		"fallback":{
-			"res_pack.11.requested":"UNSUPPORT LANGUAGE",
-			"please.download.and_add_it":"Set the game language to Chinese",
-			"please.add.dedicated.res_pack.11":"\nUNSUPPORT LANGUAGE! / 不支持的语言！\nPlease set the game language to Chinese.\n请将游戏语言设置为中文（大陆/香港/台湾）。"
+			"fcub.check_java.rp_request_113.title":"§c不支持的语言",
+			"fcub.check_java.rp_request_113.subtitle":"§e请将游戏语言设置为中文（大陆/香港/台湾）",
+			"fcub.check_java.rp_request_113.message":"§e\nUNSUPPORT LANGUAGE! \nPlease set the game language to Chinese.\n\n不支持的语言！\n请将游戏语言设置为中文（大陆/香港/台湾）。\n"
 		},
 		"base":{
-			"res_pack.11.requested":"§r",
-			"please.download.and_add_it":"§r",
-			"please.add.dedicated.res_pack.11":" "
+			"fcub.check_java.rp_request_113.title":" ",
+			"fcub.check_java.rp_request_113.subtitle":" ",
+			"fcub.check_java.rp_request_113.message":" "
 		},
 		"conversion":{
-			"res_pack.12.requested":"请升级您的资源包",
-			"please.add.dedicated.res_pack.12":"资源包已更新至 v1.2，请从群聊下载并手动升级。",
-			"fcub.notice.bug":"§c§l由于您被误判为基岩版玩家，导致配置出错。这会影响到您的正常游戏，需要退出重新进入才能恢复正常。",
-			"fcub.notice.notsupport_offhand":"§c§l由于您被误判基岩版玩家，导致配置出错。这会影响到您的正常游戏，需要退出重新进入才能恢复正常。",
+			"fcub.check_java.rp_request_113.message":"§a专用资源包已是最新版本！",
+			"fcub.check_bedrock.rp_request_113.title":"§c玩家配置错误",
+			"fcub.check_bedrock.rp_request_113.subtitle":"§e请退出重进以恢复正常",
+			"fcub.check_bedrock.rp_request_113.message":"§e\n由于您被误判为基岩版玩家，\n导致配置出错。\n这会影响到您的正常游戏，\n需要退出重新进入才能恢复正常。\n",
+			"fcub.check_java.rp_request_114.title":"§a资源包已更新至 v1.1.4",
+			"fcub.check_java.rp_request_114.subtitle":"§b请手动升级，可在游玩指南/群文件中找到",
+			"fcub.check_java.rp_request_114.message":"§a\n资源包已更新至 v1.1.4！\n§b请手动下载升级，\n最新版资源包可在游玩指南/群文件中找到\n",
+			"fcub.check_java.rp_request_120.title":"§a资源包已更新至 v1.2.0",
+			"fcub.check_java.rp_request_120.subtitle":"§b请手动升级，可在游玩指南/群文件中找到",
+			"fcub.check_java.rp_request_120.message":"§a\n资源包已更新至 v1.2.0！\n§b请手动下载升级，\n最新版资源包可在游玩指南/群文件中找到\n",
 			"fcub.menu.title":"● §l服务器特色功能§r\n\n",
 			"fcub.menu.forcestack":"§4【强制叠放背包物品】§r\n",
 			"fcub.menu.forcestack.tips":"当物品（尤其是丹药）叠放出现异常时可使用此功能。\n§7该功能也可以通过命令：“/pcub stack”实现。§r",
@@ -78,7 +82,6 @@
 			"fcub.menu.skin":"§4【修复基岩版皮肤显示】§r\n",
 			"fcub.menu.skin.tips":"如果您通过 LittleSkin 登录进服，且希望基岩版玩家可以看见你的皮肤，请点击此按钮进行修复。\n§7（正版登录无需使用）",
 			"fcub.menu.chest_count":"§4【查看各副本开箱次数】§r\n",
-			"pl.info.newest_version":"§6§l幻域无界专用资源包 v1.1.2 已启用",
 			"pl.info.instance5.end2":"§6虽然四圣兽事件终于落幕了，但是你总觉得整件事似乎另有隐情",
 			"pl.sign.training_job2_15.1.text1":"服务器装有叠放插件",
 			"pl.sign.training_job2_15.1.text2":"可以自由移动丹药",

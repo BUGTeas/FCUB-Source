@@ -59,16 +59,14 @@ public class FCUBListener implements Listener {
                     hideMsg = true;
                     break;
                 }
-            boolean finalHideMsg = hideMsg;
-            new BukkitRunnable() {
+            String editionView = edition.toUpperCase().charAt(0) + edition.substring(1);
+            if(!hideMsg) new BukkitRunnable() {
                 @Override
                 public void run() {
-                    if (!finalHideMsg)
-                        consoleExec("execute as " + playerUUID + " run tellraw @a[name=!" + playerName + "] [{\"translate\":\"fcub." + edition + ".player\"},{\"text\":\" \"},{\"translate\":\"multiplayer.player.joined\", \"with\":[{\"selector\":\"@s\"}], \"color\":\"yellow\"}]");
-                    //if (!(isFloodgate && !fgPlayer.isLinked())) targetPlayer.performCommand("bskin quiet " + targetName);
+                    consoleExec("execute as " + playerUUID + " run tellraw @a[name=!" + playerName + "] [{\"translate\":\"fcub." + edition + ".player\", \"fallback\":\"§" + ((edition == "java") ? "b" : "a") + "[" + editionView + "]§e \"},{\"translate\":\"multiplayer.player.joined\", \"with\":[{\"selector\":\"@s\"}], \"color\":\"yellow\"}]");
                 }
             }.runTaskLater(Main.getPlugin(Main.class), 0L);
-            getLogger().info("\n[" + edition.toUpperCase().charAt(0) + edition.substring(1) + "] " + playerDisplay + "（" + playerName + "）加入了游戏");
+            getLogger().info("\n[" + editionView + "] " + playerDisplay + "（" + playerName + "）加入了游戏");
         }
         event.setJoinMessage(null);
     }
@@ -90,9 +88,10 @@ public class FCUBListener implements Listener {
                 else if (tag.equals("player_bedrock")) platform = "bedrock";
             }
             consoleExec("execute as " + playerUUID + " run function aiod:timer_sync");
+            String platformView = platform.toUpperCase().charAt(0) + platform.substring(1);
             if (!hideMsg)
-                consoleExec("execute as " + playerUUID + " run tellraw @a[name=!" + playerName + "] [{\"translate\":\"fcub." + platform + ".player\"},{\"text\":\" \"},{\"translate\":\"multiplayer.player.left\", \"with\":[{\"selector\":\"@s\"}], \"color\":\"yellow\"}]");
-            getLogger().info("\n[" + platform.toUpperCase().charAt(0) + platform.substring(1) + "] " + playerDisplay + "（" + playerName + "）退出了游戏");
+                consoleExec("execute as " + playerUUID + " run tellraw @a[name=!" + playerName + "] [{\"translate\":\"fcub." + platform + ".player\", \"fallback\":\"§" + ((platform == "java") ? "b" : "a") + "[" + platformView + "]§e \"},{\"translate\":\"multiplayer.player.left\", \"with\":[{\"selector\":\"@s\"}], \"color\":\"yellow\"}]");
+            getLogger().info("\n[" + platformView + "] " + playerDisplay + "（" + playerName + "）退出了游戏");
             if (getServer().getOnlinePlayers().size() == 1) getLogger().info("所有玩家已退出！");
         }
         event.setQuitMessage(null);
