@@ -1,0 +1,1 @@
+execute positioned -189 103 -840 run function fcub:ture_pangu/hide_check/auto/stop_localed
