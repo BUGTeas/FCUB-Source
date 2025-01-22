@@ -2,14 +2,12 @@
 	"geyser":{
 		"fallback":{},
 		"base":{
-			"fcub.check_bedrock.rp_request_120.title":" ",
-			"fcub.check_bedrock.rp_request_120.subtitle":" "
+			"fcub.check.bedrock":"%s"
 		},
 		"conversion":{
-			"fcub.check_bedrock.rp_request_120.message":"§e§l请仔细浏览游玩指南网页§r （群公告里有链接）， 否则您将无法从容应对各种 Bug！！",
-			"fcub.check_java.rp_request_120.title":"§c玩家数据加载错误",
-			"fcub.check_java.rp_request_120.subtitle":"§e请退出重进以恢复正常",
-			"fcub.check_java.rp_request_120.message":"§e\n由于您被误判为 Java 版玩家，\n导致玩家数据加载错误，\n需要退出重新进入才能恢复正常。\n\n"
+			"fcub.joinError.bedrock.title":"玩家配置错误",
+			"fcub.joinError.bedrock.subtitle":"请退出重进以恢复正常",
+			"fcub.joinError.bedrock.message":"\n由于您被误判为 Java 版玩家，\n导致配置出错。\n这会影响到您的正常游戏，\n需要退出重新进入才能恢复正常。\n"
 		},
 		"tw":{}
 	},
@@ -39,8 +37,10 @@
 	"common":{
 		"fallback":{},
 		"base":{
-			"fcub.bedrock.player": "§a[基岩]§e ",
-
+			"pl.sign.training_job2_15.1.text1":"",
+			"pl.sign.training_job2_15.1.text2":"服务器装有叠放插件",
+			"pl.sign.training_job2_15.1.text3":"可以自由移动丹药",
+			"pl.sign.training_job2_15.1.text4":"",
 
 			"pcub.potion.effect.absorption": "",
 			"pcub.potion.effect.bad_omen": "",
@@ -112,32 +112,41 @@
 			"pcub.potion.time.25min": "",
 			"pcub.potion.time.30min": ""
 		},
-		"conversion":{},
+		"conversion":{
+			"fcub.bedrock.player": "§a[基岩]§e "
+		},
 		"tw":{},
 		"hk":{}
 	},
 	"java":{
 		"fallback":{
-			"fcub.check_java.rp_request_120.title":"§c不支持的语言",
-			"fcub.check_java.rp_request_120.subtitle":"§e请将游戏语言设置为中文（大陆/香港/台湾）",
-			"fcub.check_java.rp_request_120.message":"§e\nUNSUPPORT LANGUAGE! \nPlease set the game language to Chinese.\n\n不支持的语言！\n请将游戏语言设置为中文（大陆/香港/台湾）。\n"
+			"fcub.langRequest.java.title":"不支持的语言",
+			"fcub.langRequest.java.subtitle":"请将游戏语言设置为中文（大陆/香港/台湾）",
+			"fcub.langRequest.java.message":"\nUNSUPPORT LANGUAGE! \nPlease set the game language to Chinese.\n\n不支持的语言！\n请将游戏语言设置为中文（大陆/香港/台湾）。\n",
+			"fcub.joinError.java.title":"玩家配置错误",
+			"fcub.joinError.java.subtitle":"请退出重进以恢复正常",
+			"fcub.joinError.java.message":"\n由于您被误判为基岩版玩家，\n导致配置出错。\n这会影响到您的正常游戏，\n需要退出重新进入才能恢复正常。\n"
 		},
 		"base":{
-			"fcub.check_java.rp_request_120.title":" ",
-			"fcub.check_java.rp_request_120.subtitle":" ",
-			"fcub.check_java.rp_request_120.message":" "
+			"fcub.check_java.rp_request_120.title":"",
+			"fcub.check_java.rp_request_120.subtitle":"",
+			"fcub.check_java.rp_request_120.message":"",
+
+			"fcub.resCheck.120.java.title":"",
+			"fcub.resCheck.120.java.subtitle":"",
+			"fcub.resCheck.120.java.message":""
 		},
 		"conversion":{
-			"fcub.check_java.rp_request_120.message":"§a专用资源包已是最新版本！",
-			"fcub.check_bedrock.rp_request_120.title":"§c玩家配置错误",
-			"fcub.check_bedrock.rp_request_120.subtitle":"§e请退出重进以恢复正常",
-			"fcub.check_bedrock.rp_request_120.message":"§e\n由于您被误判为基岩版玩家，\n导致配置出错。\n这会影响到您的正常游戏，\n需要退出重新进入才能恢复正常。\n",
-			"fcub.check_java.rp_request_121.title":"§a资源包已更新至 v1.2.1",
-			"fcub.check_java.rp_request_121.subtitle":"§b请手动升级，可在游玩指南/群文件中找到",
-			"fcub.check_java.rp_request_121.message":"§a\n资源包已更新至 v1.2.1！\n§b请手动下载升级，\n最新版资源包可在游玩指南/群文件中找到\n",
-			"fcub.check_java.rp_request_130.title":"§a资源包已更新至 v1.3.0",
-			"fcub.check_java.rp_request_130.subtitle":"§b请手动升级，可在游玩指南/群文件中找到",
-			"fcub.check_java.rp_request_130.message":"§a\n资源包已更新至 v1.3.0！\n§b请手动下载升级，\n最新版资源包可在游玩指南/群文件中找到\n",
+			"fcub.check_java.rp_request_120.message":"专用资源包已是最新版本！",
+
+			"fcub.resCheck.120.java.message":"专用资源包已是最新版本！",
+			"fcub.joinError.java.title":"玩家配置错误",
+			"fcub.joinError.java.subtitle":"请退出重进以恢复正常",
+			"fcub.joinError.java.message":"\n由于您被误判为基岩版玩家，\n导致配置出错。\n这会影响到您的正常游戏，\n需要退出重新进入才能恢复正常。\n",
+			"fcub.resUpdate.java.title":"资源包已更新至 v%s",
+			"fcub.resUpdate.java.subtitle":"请手动升级，可在游玩指南/群文件中找到",
+			"fcub.resUpdate.java.message":"\n资源包已更新至 v%s！\n§b请手动下载升级，\n最新版资源包可在游玩指南/群文件中找到\n",
+
 			"fcub.menu.title":"● §l服务器特色功能§r\n\n",
 			"fcub.menu.forcestack":"§4【强制叠放背包物品】§r\n",
 			"fcub.menu.forcestack.tips":"当物品（尤其是丹药）叠放出现异常时可使用此功能。\n§7该功能也可以通过命令：“/pcub stack”实现。§r",
@@ -149,11 +158,7 @@
 			"fcub.menu.skin":"§4【修复基岩版皮肤显示】§r\n",
 			"fcub.menu.skin.tips":"如果您通过 LittleSkin 登录进服，且希望基岩版玩家可以看见你的皮肤，请点击此按钮进行修复。\n§7（正版登录无需使用）",
 			"fcub.menu.chest_count":"§4【查看各副本开箱次数】§r\n",
-			"pl.info.instance5.end2":"§6虽然四圣兽事件终于落幕了，但是你总觉得整件事似乎另有隐情",
-			"pl.sign.training_job2_15.1.text1":"服务器装有叠放插件",
-			"pl.sign.training_job2_15.1.text2":"可以自由移动丹药",
-			"pl.sign.training_job2_15.1.text3":"而不需要按 Shift",
-			"pl.sign.training_job2_15.1.text4":"（仅限 Java 版）"
+			"pl.info.instance5.end2":"§6虽然四圣兽事件终于落幕了，但是你总觉得整件事似乎另有隐情"
 		},
 		"tw":{},
 		"hk":{}
