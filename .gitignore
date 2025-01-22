@@ -10,8 +10,3 @@
 /ResourcePackJava/assets/minecraft/textures/gui/title/background
 /ResourcePackJava/assets/minecraft/textures/gui/title/edition.png.mcmeta
 /ResourcePackJava/assets/minecraft/textures/gui/title/minecraft.png.mcmeta
-# 丹药优化修改
-/ResourcePackJava/assets/minecraft/models/item/potion.json
-/ResourcePackJava/assets/minecraft/models/item/splash_potion.json
-/ResourcePackJava/assets/pcub/models
-/ResourcePackJava/assets/pcub/textures
