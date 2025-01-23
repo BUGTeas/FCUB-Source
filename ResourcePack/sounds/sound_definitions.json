@@ -1,0 +1,14 @@
+{
+   "format_version" : "1.20.20",
+   "sound_definitions" : {
+      "bgm_new_year": {
+        "category" : "record",
+        "sounds": [{
+          "name": "sounds/custom/chinese_new_year",
+          "is3D" : false,
+          "stream": true,
+          "volume" : 1
+        }]
+      }
+   }
+}

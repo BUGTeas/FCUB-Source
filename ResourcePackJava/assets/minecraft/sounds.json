@@ -98,5 +98,15 @@
 	"music.under_water": {
 		"replace":true,
 		"sounds": []
+	},
+	"bgm_new_year": {
+		"replace":true,
+		"subtitle":"背景音乐：春节系列",
+		"sounds": [
+			{
+				"name": "custom/chinese_new_year",
+				"stream": true
+			}
+		]
 	}
 }

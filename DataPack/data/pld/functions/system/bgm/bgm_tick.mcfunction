@@ -1,0 +1,2 @@
+execute if score #5ticks_bgm_middle_now time_trigger matches 0.. run scoreboard players remove #5ticks_bgm_middle_now time_trigger 1
+execute if score #5ticks_bgm_middle_now time_trigger matches 0 run function fcub:bgm_new_year
