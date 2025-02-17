@@ -1,5 +1,5 @@
 forms:
-  menubook-be:
+  panling_menubook-0-0:
     title: "当前延迟： %player_ping%ms"
     content: "pcub.content.menubook"
     buttons: 
