@@ -1,0 +1,1 @@
+execute if entity @s[tag=dlcnpc1] as @a[tag=interact_villager] run function fcub:dlc_fix/dz/weapon/ld_1234/player
