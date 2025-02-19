@@ -4,22 +4,17 @@
 		"supported_formats": [ 16, 42 ],
 		"description": [
 			{
-				"text": "幻域无界专用",
+				"text": "仅限幻域无界使用",
 				"color": "#00ffaa",
 				"bold": true
 			},
 			{
-				"text":" 需叠加在梦回盘灵包之上，",
+				"text":" 需叠加在梦回盘灵包之上 ",
 				"color": "#ffaa00",
 				"bold": false
 			},
 			{
-				"text":"勿在其他服务器使用！",
-				"color": "#ffff00",
-				"bold": true
-			},
-			{
-				"text": "v1.2.0",
+				"text": "v1.2.1",
 				"color": "#808080",
 				"bold": false
 			}
