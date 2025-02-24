@@ -128,12 +128,11 @@
 			"fcub.joinError.java.message":"\n由于您被误判为基岩版玩家，\n导致配置出错。\n这会影响到您的正常游戏，\n需要退出重新进入才能恢复正常。\n"
 		},
 		"base":{
-			"fcub.resCheck.121.java.title":"",
-			"fcub.resCheck.121.java.subtitle":"",
-			"fcub.resCheck.121.java.message":""
+			"fcub.resCheck.122.java.title":"%s",
+			"fcub.resCheck.122.java.subtitle":"%s"
 		},
 		"conversion":{
-			"fcub.resCheck.121.java.message":"专用资源包已是最新版本！",
+			"fcub.resCheck.122.java.message":"专用资源包已是最新版本！",
 			"fcub.joinError.java.title":"玩家配置错误",
 			"fcub.joinError.java.subtitle":"请退出重进以恢复正常",
 			"fcub.joinError.java.message":"\n由于您被误判为基岩版玩家，\n导致配置出错。\n这会影响到您的正常游戏，\n需要退出重新进入才能恢复正常。\n",

@@ -9,17 +9,19 @@ $tellraw @s {"translate": "fcub.resCheck.$(a)$(b)$(c).java.message", "color": "g
 	], "fallback": "%2$s"}\
 ], "fallback": "%s"}
 $title @s subtitle {"translate": "fcub.resCheck.$(a)$(b)$(c).java.subtitle", "color": "green", "with": [\
+	$(subtitle),\
 	{"translate": "fcub.resUpdate.java.subtitle", "color": "green", "with": [\
 		"$(a).$(b).$(c)", {"translate": "fcub.joinError.bedrock.subtitle", "color": "yellow", "with": [\
 			{"translate": "fcub.langRequest.java.subtitle", "fallback": "可在游玩指南/群文件中找到", "color": "yellow"}\
 		], "fallback": "%s"}\
 	], "fallback": "%2$s"}\
-], "fallback": "%s"}
+], "fallback": "%2$s"}
 $title @s title {"translate": "fcub.resCheck.$(a)$(b)$(c).java.title", "color": "green", "with": [\
+	$(title),\
 	{"translate": "fcub.resUpdate.java.title", "color": "aqua", "with": [\
 		"$(a).$(b).$(c)", {"translate": "fcub.joinError.bedrock.title", "color": "red", "with": [\
 			{"translate": "fcub.langRequest.java.title", "fallback": "请添加最新版专用资源包", "color": "red"}\
 		], "fallback": "%s"}\
 	], "fallback": "%2$s"}\
-], "fallback": "%s"}
+], "fallback": "%2$s"}
 tag @s remove fcub_notice_later

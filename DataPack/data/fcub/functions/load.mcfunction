@@ -1,4 +1,6 @@
-execute unless score #system pcub_api_version matches 4 run say [fcub] 当前梦盘互通套件版本不匹配，可能会出现兼容性错误。
+# 满足此条件则提示兼容性：(当前版本 > 所需版本 || 最低兼容版本 > 所需版本)
+execute unless score #system pcub_api_version matches 6.. run say [幻域无界数据包] 当前梦盘互通套件版本低于 v1.6.0，可能会出现兼容性错误。
+execute unless score #system pcub_api_minVersion matches ..6 run say [幻域无界数据包] 本套件版本过低，与当前梦盘互通套件版本存在兼容性问题，请升级
 
 #昆仑bgm时间倒数
 scoreboard players set #5ticks_bgm_shen_all time_trigger 350
