@@ -1,4 +1,4 @@
-package org.pcub.fcub;
+package org.fcub.plugin;
 
 import org.bukkit.Server;
 import org.bukkit.command.CommandSender;

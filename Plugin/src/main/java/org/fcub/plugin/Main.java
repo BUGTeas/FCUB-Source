@@ -1,4 +1,4 @@
-package org.pcub.fcub;
+package org.fcub.plugin;
 
 import org.bukkit.plugin.java.JavaPlugin;
 

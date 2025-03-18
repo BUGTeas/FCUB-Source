@@ -1,6 +1,6 @@
 name: FCUB
 version: '${version}'
-main: org.pcub.fcub.Main
+main: org.fcub.plugin.Main
 api-version: '1.20'
 softdepend:
   - Geyser-Spigot
