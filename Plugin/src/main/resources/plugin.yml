@@ -3,5 +3,15 @@ version: '${version}'
 main: org.fcub.plugin.Main
 api-version: '1.20'
 softdepend:
+  - MultiLogin
   - Geyser-Spigot
   - floodgate
+commands:
+  flink:
+    description: 幻域无界账户绑定（基于 MultiLogin 插件）
+  linkaccount:
+    description: 幻域无界账户绑定（基于 MultiLogin 插件）
+  funlink:
+    description: 幻域无界账户解绑
+  unlinkaccount:
+    description: 幻域无界账户解绑
