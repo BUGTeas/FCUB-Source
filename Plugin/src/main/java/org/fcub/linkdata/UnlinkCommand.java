@@ -33,7 +33,7 @@ public class UnlinkCommand implements CommandExecutor {
         int serviceId = playerML.getLoginService().getServiceId();
         if (onlineID.compareTo(player.getUniqueId()) == 0) {
             // 未绑定至任何身份
-            commandSender.sendMessage("§c当前未绑定到其它存档");
+            commandSender.sendMessage("§c当前未绑定到其它身份");
 //            commandSender.spigot().sendMessage(simpleTrans("fcub.unlinkdata.error.notLinked", ChatColor.RED));
             return false;
         }
@@ -50,7 +50,7 @@ public class UnlinkCommand implements CommandExecutor {
             @Override
             public void run(){
                 // 如果 MultiLogin 未踢出玩家，则玩家会看到这条消息
-                commandSender.sendMessage("§6已尝试解除您和 " + player.getName() + " 存档的绑定，但貌似遇到了点问题。\n§b如果重进后仍然未回到原先的存档，请重新使用命令再试。");
+                commandSender.sendMessage("§6已尝试解除您和 " + player.getName() + " 的绑定，但貌似遇到了点问题。\n§b如果重进后仍然未回到原先的身份及存档，请重新使用命令再试。");
 //                commandSender.spigot().sendMessage(new TranslatableComponent("fcub.unlinkdata.problem"));
             }
         }.runTaskLaterAsynchronously(main, 20L);

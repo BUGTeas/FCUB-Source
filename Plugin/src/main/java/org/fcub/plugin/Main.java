@@ -28,14 +28,14 @@ public final class Main extends JavaPlugin {
 
         // 绑定系统
         // 绑定
-        PluginCommand flinkCommand = Bukkit.getPluginCommand("flink");
-        PluginCommand linkaccountCommand = Bukkit.getPluginCommand("linkaccount");
+        PluginCommand flinkCommand = Bukkit.getPluginCommand("fcub:flink");
+        PluginCommand linkaccountCommand = Bukkit.getPluginCommand("fcub:linkaccount");
         LinkCommand linkCommand = new LinkCommand(this);
         flinkCommand.setExecutor(linkCommand);
         linkaccountCommand.setExecutor(linkCommand);
         // 解绑
-        PluginCommand funlinkCommand =  Bukkit.getPluginCommand("funlink");
-        PluginCommand unlinkaccountCommand =  Bukkit.getPluginCommand("unlinkaccount");
+        PluginCommand funlinkCommand =  Bukkit.getPluginCommand("fcub:funlink");
+        PluginCommand unlinkaccountCommand =  Bukkit.getPluginCommand("fcub:unlinkaccount");
         UnlinkCommand unlinkCommand = new UnlinkCommand(this);
         funlinkCommand.setExecutor(unlinkCommand);
         unlinkaccountCommand.setExecutor(unlinkCommand);

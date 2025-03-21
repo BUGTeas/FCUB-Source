@@ -64,6 +64,14 @@ public class LinkCommand implements CommandExecutor {
             main.getLogger().warning("此命令仅限玩家使用");
             return false;
         }
+        if (main.mlAPI == null) {
+            String failMsg = "执行失败: 找不到 MultiLogin API";
+            commandSender.sendMessage(ChatColor.RED + failMsg);
+            main.getLogger().warning(failMsg);
+        }
+
+        MultiLoginPlayerData playerML = main.mlAPI.getPlayerData(player.getUniqueId());
+        UUID onlineID = playerML.getOnlineProfile().getId();
         final String playerName = player.getName();
 
         // 接受邀请
@@ -96,13 +104,6 @@ public class LinkCommand implements CommandExecutor {
 //                commandSender.spigot().sendMessage(simpleTrans("fcub.linkdata.error.verify", ChatColor.RED));
                 return false;
             }
-            if (main.mlAPI == null) {
-                String failMsg = "执行失败: 找不到 MultiLogin API";
-                commandSender.sendMessage(ChatColor.RED + failMsg);
-                main.getLogger().warning(failMsg);
-            }
-            MultiLoginPlayerData playerML = main.mlAPI.getPlayerData(player.getUniqueId());
-            UUID onlineID = playerML.getOnlineProfile().getId();
             int serviceId = playerML.getLoginService().getServiceId();
             acceptInvite(onlineID, serviceId, inviteeName);
             invites.remove(inviteeName);
@@ -110,7 +111,7 @@ public class LinkCommand implements CommandExecutor {
                 @Override
                 public void run(){
                     // 如果 MultiLogin 未踢出玩家，则玩家会看到这条消息
-                    commandSender.sendMessage("§6已尝试将您绑定到 " + inviteeName + " 存档，但貌似遇到了点问题。\n§b如果重进后存档仍然未变，请对方重新发起绑定再试。");
+                    commandSender.sendMessage("§6已尝试将您绑定到 " + inviteeName + "，但貌似遇到了点问题。\n§b如果重进后身份及存档仍然未变，请对方重新发起绑定再试。");
 //                    commandSender.spigot().sendMessage(new TranslatableComponent("fcub.linkdata.problem"));
                 }
             }.runTaskLaterAsynchronously(main, 20L);
@@ -118,6 +119,10 @@ public class LinkCommand implements CommandExecutor {
         }
 
         // 发起绑定邀请
+        if (onlineID.compareTo(player.getUniqueId()) != 0) {
+            commandSender.sendMessage("§c请先回到账户原有身份后再试\n§3使用 §6/funlink §3或 §6/unlinkaccount §3命令解除当前绑定，回到您原有的身份及档案");
+            return false;
+        }
         boolean targetSpecified = args.length > 0;
         if (targetSpecified && args[0].equals(playerName)) {
             // 不能和自己绑定
@@ -133,7 +138,7 @@ public class LinkCommand implements CommandExecutor {
         }
         // 显示是否指定玩家
         BaseComponent inviteTargetComp =
-                targetSpecified ? new TranslatableComponent("§3玩家以 %s §3存档", "§6" + args[0])
+                targetSpecified ? new TranslatableComponent("§3玩家以 %s §3身份", "§6" + args[0])
                         : new TextComponent("§3任一玩家 (除了自己) ");
 //                        targetSpecified ? new TranslatableComponent("fcub.linkdata.invite.specific", args[0])
 //                                : new TranslatableComponent("fcub.linkdata.invite.all");
@@ -150,7 +155,7 @@ public class LinkCommand implements CommandExecutor {
         playerNameComp.setColor(ChatColor.GOLD);
         // 最终消息
 //        commandSender.spigot().sendMessage(new TranslatableComponent("fcub.linkdata.invite",
-        commandSender.spigot().sendMessage(new TranslatableComponent("%s§3在聊天栏输入以下命令, 即可在本服务器内，以您当前的存档 (%s§3) 进入游戏:\n%s§7 (%s §7秒后失效)\n§3对方使用命令 §6/funlink §3或 §6/unlinkaccount §3即可恢复到自己原先的存档。",
+        commandSender.spigot().sendMessage(new TranslatableComponent("%s§3在聊天栏输入以下命令, 即可在本服务器内，以您当前的身份 (%s§3) 及存档进入游戏:\n%s§7 (%s §7秒后失效)\n§3对方使用解绑命令 (§6/funlink §3或 §6/unlinkaccount§3) 即可恢复到自己原先的身份及存档。\n§6注意: 解绑命令只能由对方执行! 只在同为自己账户, 或信任对方的前提下继续绑定!",
                 inviteTargetComp,
                 playerNameComp,
                 acceptCmdComp,
