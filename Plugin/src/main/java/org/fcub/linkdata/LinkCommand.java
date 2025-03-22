@@ -20,19 +20,17 @@ import java.util.Map;
 import java.util.Random;
 import java.util.UUID;
 
-record InviteItem(int verifyCode, String specificTargetName) {
-}
-
 public class LinkCommand implements CommandExecutor {
 
     private final long inviteTimeout = 120L;
     private final Main main;
     private final Common common;
-    private final Map<String, InviteItem> invites = new HashMap<>();
+    private final Map<String, InviteItem> invites;
 
-    public LinkCommand(Main main, Common common) {
+    public LinkCommand(Main main, Common common, Map<String, InviteItem> invites) {
         this.main = main;
         this.common = common;
+        this.invites = invites;
     }
 
     public int createInvite(String inviteeName, String specificTargetName){

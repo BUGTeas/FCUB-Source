@@ -12,15 +12,12 @@ import org.fcub.plugin.Common;
 import org.fcub.plugin.Main;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.UUID;
 
 public class UnlinkCommand implements CommandExecutor {
 
     private final Main main;
     private final Common common;
-    private final Map<String, InviteItem> invites = new HashMap<>();
 
     public UnlinkCommand(Main main, Common common) {
         this.main = main;
