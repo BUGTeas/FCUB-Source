@@ -15,7 +15,6 @@ import org.fcub.plugin.Common;
 import org.fcub.plugin.Main;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 import java.util.UUID;

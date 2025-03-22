@@ -36,7 +36,7 @@ public class LinkTab implements TabCompleter {
         }
         // 遍历活跃邀请列表
         invites.forEach((name, value) -> {
-            if (senderName.equals(name) || nameList.contains(name)) {
+            if (senderName.equals(name) || nameList.contains(name) || value.specificTargetName() != null && ! value.specificTargetName().equals(name)) {
                 return;
             }
             nameList.add(name);
