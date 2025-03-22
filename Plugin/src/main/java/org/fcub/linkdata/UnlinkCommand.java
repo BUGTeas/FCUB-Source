@@ -8,14 +8,24 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
+import org.fcub.plugin.Common;
 import org.fcub.plugin.Main;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 
 public class UnlinkCommand implements CommandExecutor {
 
     private final Main main;
+    private final Common common;
+    private final Map<String, InviteItem> invites = new HashMap<>();
+
+    public UnlinkCommand(Main main, Common common) {
+        this.main = main;
+        this.common = common;
+    }
 
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, String[] args) {
@@ -23,12 +33,12 @@ public class UnlinkCommand implements CommandExecutor {
             main.getLogger().warning("此命令仅限玩家使用");
             return false;
         }
-        if (main.mlAPI == null) {
+        if (common.mlAPI == null) {
             String failMsg = "执行失败: 找不到 MultiLogin API";
             commandSender.sendMessage(ChatColor.RED + failMsg);
             main.getLogger().warning(failMsg);
         }
-        MultiLoginPlayerData playerML = main.mlAPI.getPlayerData(player.getUniqueId());
+        MultiLoginPlayerData playerML = common.mlAPI.getPlayerData(player.getUniqueId());
         UUID onlineID = playerML.getOnlineProfile().getId();
         int serviceId = playerML.getLoginService().getServiceId();
         if (onlineID.compareTo(player.getUniqueId()) == 0) {
@@ -55,9 +65,5 @@ public class UnlinkCommand implements CommandExecutor {
             }
         }.runTaskLaterAsynchronously(main, 20L);
         return true;
-    }
-
-    public UnlinkCommand(Main main) {
-        this.main = main;
     }
 }

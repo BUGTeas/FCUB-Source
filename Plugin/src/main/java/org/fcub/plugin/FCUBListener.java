@@ -7,10 +7,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
-import org.bukkit.plugin.PluginManager;
 import org.bukkit.scheduler.BukkitRunnable;
-import org.geysermc.floodgate.api.FloodgateApi;
-import org.geysermc.geyser.api.GeyserApi;
 
 import java.util.Set;
 import java.util.UUID;
@@ -19,21 +16,20 @@ import static org.bukkit.Bukkit.getLogger;
 import static org.bukkit.Bukkit.getServer;
 
 public class FCUBListener implements Listener {
+
     //控制台
     Server server = getServer();
     CommandSender consoleSender = server.getConsoleSender();
+    Common common;
+
+    public FCUBListener(Common common) {
+        this.common = common;
+    }
+
     //命令执行器
     public void consoleExec(String command){
         server.dispatchCommand(consoleSender, command);
     }
-    // 检查插件并获取接口
-    PluginManager pluginManager = server.getPluginManager();
-    // Geyser
-    boolean geyserVaild = pluginManager.getPlugin("Geyser-Spigot") != null;
-    GeyserApi geyserApi = geyserVaild ? GeyserApi.api() : null;
-    // Floodgate
-    boolean fgVaild = pluginManager.getPlugin("floodgate") != null;
-    FloodgateApi fgApi = fgVaild ? FloodgateApi.getInstance() : null;
     //登录失败后记录，以免踢出时弹出消息
     boolean loginFail = false;
     //玩家进服事件
@@ -42,17 +38,18 @@ public class FCUBListener implements Listener {
         Player player = event.getPlayer();
         UUID playerUUID = player.getUniqueId();
         String playerName = player.getName();
-        boolean isGeyser = geyserVaild && geyserApi.isBedrockPlayer(playerUUID);
-        boolean isFloodgate = fgVaild && fgApi.isFloodgatePlayer(playerUUID);
+        boolean isGeyser = common.geyserAPI != null && common.geyserAPI.isBedrockPlayer(playerUUID);
+        boolean isFloodgate = common.fgAPI != null && common.fgAPI.isFloodgatePlayer(playerUUID);
         //检查玩家是否绑定账户
-        fgApi.getPlayerLink().isLinkedPlayer(playerUUID).thenAccept( isLinked -> {
-            if (isLinked) player.addScoreboardTag("linked_account");
-            else player.removeScoreboardTag("linked_account");
-        });
+        if (common.mlAPI != null && ! common.mlAPI.getPlayerData(playerUUID).getOnlineProfile().getId().equals(playerUUID)) {
+            player.addScoreboardTag("linked_account");
+        } else {
+            player.removeScoreboardTag("linked_account");
+        }
         //进服提示区分客户端
         String edition = (isFloodgate || isGeyser) ? "bedrock" : "java";
-        if (fgVaild && !isFloodgate && geyserVaild && isGeyser) loginFail = true;
-        else {
+//        if (fgVaild && !isFloodgate && geyserVaild && isGeyser) loginFail = true;
+//        else {
             Set<String> tags = player.getScoreboardTags();
             boolean hideMsg = false;
             for (String tag : tags)
@@ -67,7 +64,7 @@ public class FCUBListener implements Listener {
                     consoleExec("execute as " + playerUUID + " run tellraw @a[name=!" + playerName + "] [{\"translate\":\"fcub." + edition + ".player\", \"fallback\":\"§" + (edition.equals("java") ? "b" : "a") + "[" + editionView + "]§e \"},{\"translate\":\"multiplayer.player.joined\", \"with\":[{\"selector\":\"@s\"}], \"color\":\"yellow\"}]");
                 }
             }.runTaskLater(Main.getPlugin(Main.class), 0L);
-        }
+//        }
         event.setJoinMessage(null);
     }
     //玩家退出事件
@@ -76,10 +73,10 @@ public class FCUBListener implements Listener {
         event.setQuitMessage(null);
         Player player = event.getPlayer();
         // 如果登录失败，则不显示消息
-        if(loginFail) {
-            loginFail = false;
-            return;
-        }
+//        if(loginFail) {
+//            loginFail = false;
+//            return;
+//        }
         UUID playerUUID = player.getUniqueId();
         String playerName = player.getName();
         Set<String> tags = player.getScoreboardTags();
