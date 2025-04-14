@@ -1,0 +1,24 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "xsj:item/qiang"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 42],
+			"translation": [0, 3, 1.25],
+			"scale": [1.5, 1.5, 0.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -38],
+			"translation": [0, 3, 1.25],
+			"scale": [1.5, 1.5, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 41],
+			"translation": [1.13, 4.45, 1.88],
+			"scale": [0.68, 0.68, 0.25]
+		}
+	}
+}

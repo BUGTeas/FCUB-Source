@@ -1,0 +1,44 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/emerald"
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"custom_model_data": 1
+			},
+			"model": "xsj:item/00"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 2
+			},
+			"model": "xsj:item/01"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 3
+			},
+			"model": "xsj:item/02"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 4
+			},
+			"model": "xsj:item/03"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 5
+			},
+			"model": "xsj:item/04"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 6
+			},
+			"model": "xsj:item/zhu0"
+		}
+	]
+}

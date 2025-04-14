@@ -1,0 +1,44 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/blaze_rod"
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"custom_model_data": 1
+			},
+			"model": "xsj:item/30"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 2
+			},
+			"model": "xsj:item/31"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 3
+			},
+			"model": "xsj:item/32"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 4
+			},
+			"model": "xsj:item/33"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 5
+			},
+			"model": "xsj:item/34"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 6
+			},
+			"model": "xsj:item/zhu3"
+		}
+	]
+}

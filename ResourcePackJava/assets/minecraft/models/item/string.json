@@ -1,0 +1,44 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/string"
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"custom_model_data": 1
+			},
+			"model": "xsj:item/20"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 2
+			},
+			"model": "xsj:item/21"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 3
+			},
+			"model": "xsj:item/22"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 4
+			},
+			"model": "xsj:item/23"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 5
+			},
+			"model": "xsj:item/24"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 6
+			},
+			"model": "xsj:item/zhu2"
+		}
+	]
+}

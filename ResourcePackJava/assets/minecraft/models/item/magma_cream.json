@@ -1,0 +1,50 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/magma_cream"
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"custom_model_data": 1
+			},
+			"model": "xsj:item/40"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 2
+			},
+			"model": "xsj:item/41"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 2
+			},
+			"model": "xsj:item/41"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 3
+			},
+			"model": "xsj:item/42"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 4
+			},
+			"model": "xsj:item/43"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 5
+			},
+			"model": "xsj:item/44"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 6
+			},
+			"model": "xsj:item/zhu4"
+		}
+	]
+}

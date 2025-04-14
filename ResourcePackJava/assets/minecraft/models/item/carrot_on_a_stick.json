@@ -121,6 +121,31 @@
       
       {
          "predicate": {
+            "custom_model_data": 200
+         },
+         "model": "xsj:item/qiang"
+      },
+      {
+         "predicate": {
+            "custom_model_data": 201
+         },
+         "model": "xsj:item/dao"
+      },
+      {
+         "predicate": {
+            "custom_model_data": 202
+         },
+         "model": "xsj:item/jian"
+      },
+      {
+         "predicate": {
+            "custom_model_data": 203
+         },
+         "model": "xsj:item/xiao"
+      },
+      
+      {
+         "predicate": {
             "custom_model_data": 2385
          },
          "model": "jg:item/redstone"
