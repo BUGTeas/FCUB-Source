@@ -113,7 +113,19 @@
 			"pcub.potion.time.30min": ""
 		},
 		"conversion":{
-			"fcub.bedrock.player": "§a[基岩]§e "
+			"fcub.bedrock.player": "§a[基岩]§e ",
+
+			"fcub.linkdata.error.linkSelf": "§c不能和自己绑定哦",
+			"fcub.linkdata.error.getInvite": "§c找不到邀请",
+			"fcub.linkdata.error.linked": "§c请先回到账户原有身份后再试\n§3使用 §6/funlink §3或 §6/unlinkaccount §3命令解除当前绑定，回到您原有的身份及档案",
+			"fcub.linkdata.error.verify": "§c验证码不正确，请检查后重试",
+			"fcub.linkdata.problem": "§6已尝试将您绑定到 %s§6，但貌似遇到了点问题。\n§b如果重进后身份及存档仍然未变，请对方重新发起绑定再试。",
+			"fcub.linkdata.tips": "§7tips: 通过参数指定玩家不再是必需, 且简短命令 /flink 可用",
+			"fcub.linkdata.invite.specific": "§3玩家以 %s §3身份",
+			"fcub.linkdata.invite.all": "§3任一玩家 (除了自己) ",
+			"fcub.linkdata.invite": "%s§3在聊天栏输入以下命令, 即可在本服务器内，以您当前的身份 (%s§3) 及存档进入游戏:\n%s§7 (%s §7秒后失效)\n§3对方使用解绑命令 (§6/funlink §3或 §6/unlinkaccount§3) 即可恢复到自己原先的身份及存档。\n§6注意: 解绑命令只能由对方执行! 只在同为自己账户, 或信任对方的前提下继续绑定!",
+			"fcub.unlinkdata.error.notLinked": "§c当前未绑定到其它身份",
+			"fcub.unlinkdata.problem": "§6已尝试解除您和 %s§6 的绑定，但貌似遇到了点问题。\n§b如果重进后仍然未回到原先的身份及存档，请重新使用命令再试。"
 		},
 		"tw":{},
 		"hk":{}
