@@ -1,3 +1,6 @@
+global-permission-defaults:
+  USE: FALSE
+  COMMAND: FALSE
 forms:
   panling_menubook-0-0:
     title: "当前延迟： %player_ping%ms"
@@ -54,16 +57,11 @@ forms:
         image: "textures/menubook/tp_stone%objective_score_{check_stone}%"
         actions:
           - commands: "player; get-tp-stone-be%objective_score_{check_stone}%"
-      #补领便携元素银行菜单
+      #领取便携元素银行菜单
       - text: "fcub.menu.get_element.1"
         image: "textures/menubook/book1"
         actions:
-          - commands: "player; get-element-menu"
-      #补领诡秘挑战工具菜单
-      - text: "fcub.menu.get_dark_fight.%objective_score_{dark_start}%"
-        image: "textures/menubook/book%objective_score_{dark_start}%"
-        actions:
-          - commands: "player; get-dark-menu%objective_score_{dark_start}%"
+          - commands: "console; execute as %player_uuid% run function fcub:get_element_menu"
       #箭袋自动补充
       - text: "pcub.menubook.2.%objective_score_{check_arrow_pack}%_%objective_score_{arrowpack_auto}%"
         image: "textures/menubook/arrowpack%objective_score_{check_arrow_pack}%"
@@ -83,11 +81,6 @@ forms:
         image: "textures/menubook/race/%objective_score_{test_bless_act}%_1"
         actions:
           - commands: "player; get-test-bless-be%objective_score_{check_race_test}%"
-      #查看各副本开箱次数
-      - text: "fcub.menu.floor_count"
-        image: "textures/element/forms/optional3/buy/goldkey"
-        actions:
-          - commands: "console; execute as %player_uuid% at @s run function floors:number"
       #更新菜单书
       - text: "pcub.menubook.12"
         image: "textures/menubook/book"

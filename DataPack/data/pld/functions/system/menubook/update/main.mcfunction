@@ -37,13 +37,6 @@ data modify storage pcub:fcub book_content append value '{"translate":"fcub.menu
 data modify storage pcub:fcub book_content append value '{"translate":"fcub.menu.forcestack","hoverEvent":{"action": "show_text","value":{"translate":"fcub.menu.forcestack.tips"}},"clickEvent":{"action":"run_command","value":"/pcub stack"}}'
 #元素银行
 data modify storage pcub:fcub book_content append value '{"translate":"fcub.menu.element","hoverEvent":{"action": "show_text","value":{"translate":"fcub.menu.element.tips"}},"clickEvent":{"action":"run_command","value":"/get-element-menu"}}'
-#诡秘词条
-execute if score @s dark_start matches 10 run data modify storage pcub:fcub book_content append value '{"translate":"fcub.menu.dark_tag","clickEvent":{"action":"run_command","value":"/get-dark-menu10"}}'
-execute unless score @s dark_start matches 10 run data modify storage pcub:fcub book_content append value '{"translate":"fcub.menu.disabled"}'
-#加载皮肤
-data modify storage pcub:fcub book_content append value '{"translate":"fcub.menu.skin","hoverEvent":{"action": "show_text","value":{"translate":"fcub.menu.skin.tips"}},"clickEvent":{"action":"run_command","value":"/setskin"}}'
-#查看副本开箱次数
-data modify storage pcub:fcub book_content append value '{"translate":"fcub.menu.chest_count","clickEvent":{"action":"run_command","value":"/chest-count"}}'
 #有关专用命令
 data modify storage pcub:fcub book_content append value '{"translate":"fcub.menu.more"}'
 
