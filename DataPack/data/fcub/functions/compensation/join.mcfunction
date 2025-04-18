@@ -13,7 +13,7 @@
 #设置末影箱状态
 	scoreboard players set @s screen -1
 #暂时清空背包
-	function fcub:guide/inventory/clear
+	function fcub:guide/inventory_clear
 #传送到提示区
 	tp @s 1308 69 42 180 0
 	spawnpoint @s 1308 69 42 180

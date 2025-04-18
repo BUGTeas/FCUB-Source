@@ -1,1 +1,0 @@
-execute if entity @s[tag=inventory_cleared] run function fcub:guide/inventory/restore/confirm

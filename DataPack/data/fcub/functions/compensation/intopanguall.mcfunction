@@ -6,7 +6,7 @@
 	execute store result storage pcub:fcub compensation.temp.levels int 1 run scoreboard players get @s fcub_comp_backup_level
 	function fcub:compensation/xp with storage pcub:fcub compensation.temp
 #还原背包
-	function fcub:guide/inventory/restore
+	function fcub:feature/inventory/restore
 #补偿
 	#保底
 		#梦盘
