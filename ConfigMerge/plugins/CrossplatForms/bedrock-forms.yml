@@ -33,7 +33,9 @@ forms:
         actions:
           - commands:
             - "execute as %player_uuid% at @s run function reload_chunk:check"
+            - "funlink reloadchunk %player_name%"
           - form: "reloadChunk_requireBot_%objective_score_{pcub_reloadChunk_check}%"
+          - commands: "scoreboard players reset %player_name% pcub_reloadChunk_check"
       #强制叠放背包物品
       - text: "pcub.menubook.stack"
         image: "textures/menubook/stack"
@@ -114,12 +116,9 @@ forms:
   reloadChunk_requireBot_-1:
     type: simple_form
     title: "重新加载区块"
-    content: "请尽量避免在单刷副本时使用此功能， 否则可能会出现问题。"
+    content: "若您在单刷副本（除了圣山）， 请勿继续使用， 以免副本出现异常！"
     buttons:
-      - text: "尽可能安全地刷新\n（使用假人占位）"
-        actions:
-          - commands: 
-            - "bot create tp_placeholder tp_holder %player_world% %player_x% %player_y% %player_z%"
-            - "execute as %player_uuid% run tag @s add tp_out"
-            - "schedule function reload_chunk:wait_for_placeholder 10"
       - text: "gui.close"
+      - text: "§l自行承担风险并继续"
+        actions:
+          - commands: "funlink reloadchunk %player_name%"

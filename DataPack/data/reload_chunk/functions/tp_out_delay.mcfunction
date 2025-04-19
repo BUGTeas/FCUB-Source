@@ -1,1 +1,0 @@
-execute as @a[tag=tp_out] at @s run function reload_chunk:tp_out {delay:2}

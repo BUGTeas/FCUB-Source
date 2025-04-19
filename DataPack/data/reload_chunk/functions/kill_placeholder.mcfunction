@@ -1,1 +1,0 @@
-kill tp_placeholder

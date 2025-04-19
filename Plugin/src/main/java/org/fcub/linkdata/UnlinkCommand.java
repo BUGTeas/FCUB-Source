@@ -3,12 +3,15 @@ package org.fcub.linkdata;
 import moe.caa.multilogin.api.data.MultiLoginPlayerData;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.chat.TranslatableComponent;
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
 import org.bukkit.Server;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
+import org.bukkit.scoreboard.Objective;
 import org.fcub.plugin.Common;
 import org.fcub.plugin.Main;
 import org.jetbrains.annotations.NotNull;
@@ -28,6 +31,20 @@ public class UnlinkCommand implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, String[] args) {
         if (!(commandSender instanceof Player player)) {
+            if (args.length > 1 && "reloadchunk".equals(args[0])) {
+                Objective reloadChunkChk = Bukkit.getServer().getScoreboardManager().getMainScoreboard().getObjective("pcub_reloadChunk_check");
+                Player player = Bukkit.getPlayer(args[1]);
+                Location originLocation = player.getLocation();
+                if (reloadChunkChk.getScore(args[1]).getScore() == -1) return false;
+                player.teleport(new Location(player.getWorld(), 1600, 1000, -1200));
+                new BukkitRunnable() {
+                    @Override
+                    public void run() {
+                        player.teleport(originLocation);
+                    }
+                }.runTaskLater(main, 5);
+                return true;
+            }
             main.getLogger().warning("此命令仅限玩家使用");
             return false;
         }
