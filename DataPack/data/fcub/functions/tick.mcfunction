@@ -8,3 +8,6 @@ scoreboard players reset @a fcub_player_dead
 gamemode adventure @a[tag=!allow_creative,gamemode=survival]
 gamemode spectator @a[tag=!allow_creative,gamemode=creative]
 gamemode adventure @a[tag=!allow_creative,scores={feather_mainland=-1},gamemode=!adventure]
+
+# 圣铸日月流星修复
+execute as @e[type=marker,tag=star_arrow51] at @s run function xsj:system/weapon_skills/crossbow5_6/arrow_action_tick
