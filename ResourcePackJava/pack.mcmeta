@@ -1,7 +1,7 @@
 ﻿{
 	"pack": {
 		"pack_format": 15,
-		"supported_formats": [ 16, 42 ],
+		"supported_formats": [ 15, 42 ],
 		"description": [
 			{
 				"text": "仅限幻域无界使用",
