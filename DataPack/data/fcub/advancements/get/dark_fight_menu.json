@@ -5,7 +5,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{display:{Name:\"[{\\\"text\\\":\\\"诡秘挑战说明/辅助工具\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}]\"}}"
+                        "nbt": "{display:{Name:'[{\"text\":\"诡秘挑战说明/辅助工具\",\"color\":\"gold\",\"italic\":false}]'}}"
                     }
                 ]
             }
