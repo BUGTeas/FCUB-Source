@@ -7,7 +7,12 @@
 		"conversion":{
 			"fcub.joinError.bedrock.title":"玩家配置错误",
 			"fcub.joinError.bedrock.subtitle":"请退出重进以恢复正常",
-			"fcub.joinError.bedrock.message":"\n由于您被误判为 Java 版玩家，\n导致配置出错。\n这会影响到您的正常游戏，\n需要退出重新进入才能恢复正常。\n"
+			"fcub.joinError.bedrock.message":"\n由于您被误判为 Java 版玩家，\n导致配置出错。\n这会影响到您的正常游戏，\n需要退出重新进入才能恢复正常。\n",
+
+			"fcub.guide.trade.info.sign.text1": "本服务器修改了 UI",
+			"fcub.guide.trade.info.sign.text2": "触屏在交易界面中",
+			"fcub.guide.trade.info.sign.text3": "按住左侧栏的物品图标",
+			"fcub.guide.trade.info.sign.text4": "可查看其对应物品信息"
 		},
 		"tw":{}
 	},
@@ -35,7 +40,16 @@
 		"tw":{}
 	},
 	"common":{
-		"fallback":{},
+		"fallback":{
+			"fcub.guide.enter.sign.back1": "当前游戏语言不受支持",
+			"fcub.guide.enter.sign.back2": "请设置为中文",
+			"fcub.guide.enter.sign.back3": "（大陆/香港/台湾）",
+			"fcub.guide.enter.sign.back4": "然后重新进入服务器",
+			"fcub.guide.enter.sign.front1": "当前游戏语言不受支持",
+			"fcub.guide.enter.sign.front2": "请设置为中文",
+			"fcub.guide.enter.sign.front3": "（大陆/香港/台湾）",
+			"fcub.guide.enter.sign.front4": "然后重新进入服务器"
+		},
 		"base":{},
 		"conversion":{
 			"fcub.bedrock.player": "§a[基岩]§e ",
@@ -50,7 +64,16 @@
 			"fcub.linkdata.invite.all": "§3任一玩家 (除了自己) ",
 			"fcub.linkdata.invite": "%s§3在聊天栏输入以下命令, 即可在本服务器内，以您当前的身份 (%s§3) 及存档进入游戏:\n%s§7 (%s §7秒后失效)\n§3对方使用解绑命令 (§6/funlink §3或 §6/unlinkaccount§3) 即可恢复到自己原先的身份及存档。\n§6注意: 解绑命令只能由对方执行! 只在同为自己账户, 或信任对方的前提下继续绑定!",
 			"fcub.unlinkdata.error.notLinked": "§c当前未绑定到其它身份",
-			"fcub.unlinkdata.problem": "§6已尝试解除您和 %s§6 的绑定，但貌似遇到了点问题。\n§b如果重进后仍然未回到原先的身份及存档，请重新使用命令再试。"
+			"fcub.unlinkdata.problem": "§6已尝试解除您和 %s§6 的绑定，但貌似遇到了点问题。\n§b如果重进后仍然未回到原先的身份及存档，请重新使用命令再试。",
+
+			"fcub.guide.enter.sign.back1": "§6基岩版游玩时",
+			"fcub.guide.enter.sign.back2": "§6遇到了问题？",
+			"fcub.guide.enter.sign.back3": "§a§l点击此告示牌",
+			"fcub.guide.enter.sign.back4": "§a再次进入教程",
+			"fcub.guide.enter.sign.front1": "§4基岩版游玩时",
+			"fcub.guide.enter.sign.front2": "§4遇到了问题？",
+			"fcub.guide.enter.sign.front3": "§5§l点击此告示牌",
+			"fcub.guide.enter.sign.front4": "§5再次进入教程"
 		},
 		"tw":{},
 		"hk":{}
@@ -62,11 +85,21 @@
 			"fcub.langRequest.java.message":"\nUNSUPPORT LANGUAGE! \nPlease set the game language to Chinese.\n\n不支持的语言！\n请将游戏语言设置为中文（大陆/香港/台湾）。\n",
 			"fcub.joinError.java.title":"玩家配置错误",
 			"fcub.joinError.java.subtitle":"请退出重进以恢复正常",
-			"fcub.joinError.java.message":"\n由于您被误判为基岩版玩家，\n导致配置出错。\n这会影响到您的正常游戏，\n需要退出重新进入才能恢复正常。\n"
+			"fcub.joinError.java.message":"\n由于您被误判为基岩版玩家，\n导致配置出错。\n这会影响到您的正常游戏，\n需要退出重新进入才能恢复正常。\n",
+
+			"fcub.guide.trade.info.sign.text1": "当前游戏语言不受支持",
+			"fcub.guide.trade.info.sign.text2": "请设置为中文",
+			"fcub.guide.trade.info.sign.text3": "（大陆/香港/台湾）",
+			"fcub.guide.trade.info.sign.text4": "然后重新进入服务器"
 		},
 		"base":{
 			"fcub.resCheck.v2.0.0.java.title":"%s",
-			"fcub.resCheck.v2.0.0.java.subtitle":"%s"
+			"fcub.resCheck.v2.0.0.java.subtitle":"%s",
+
+			"fcub.guide.trade.info.sign.text1": "",
+			"fcub.guide.trade.info.sign.text2": "",
+			"fcub.guide.trade.info.sign.text3": "",
+			"fcub.guide.trade.info.sign.text4": ""
 		},
 		"conversion":{
 			"pl.sign.training_job2_15.1.text1":"",

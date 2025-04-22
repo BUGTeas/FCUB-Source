@@ -1,1 +1,0 @@
-clear @s minecraft:potion{id:"fcub:guide_stack_item"}

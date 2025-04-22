@@ -1,1 +1,0 @@
-tellraw @s [{"text": "使用你希望绑定的账户，在 Java 版中使用以下命令开始操作：","color": "gold"},{"text": "/linkaccount ","color": "green"},{"selector": "@s","color": "green"}]

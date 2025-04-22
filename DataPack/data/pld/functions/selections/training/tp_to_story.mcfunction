@@ -1,14 +1,4 @@
-experience set @s 0 levels
-experience set @s 0 points
-clear @s
-tag @s remove beginner_set_4
+execute unless entity @s[tag=is_selecting] run return 0
 
-tp @s[scores={race=0}] 1200 43 647 -90 0
-tp @s[scores={race=1}] 1248 43 647 -90 0
-tp @s[scores={race=2}] 1296 43 647 -90 0
-tp @s[scores={race=3}] 1344 43 647 -90 0
-tp @s[scores={race=4}] 1392 43 647 -90 0
-
-
-
-
+execute if entity @s[tag=player_bedrock] run function fcub:guide/into/is_selecting
+execute if entity @s[tag=player_java] run function fcub:guide/tp_to_story
