@@ -1,1 +1,0 @@
-function xsj:system/weapon_skills/crossbow5_6/when_shoot

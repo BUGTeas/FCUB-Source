@@ -1,8 +1,0 @@
-{
-    "特别注意":"此文件覆盖上层数据包所有函数！",
-    "replace": true,
-    "values": [
-       "pld:system/archer_damage/weapon_skill/crossbow5/when_shoot",
-       "fcub:dlc_fix/weapon_skills/when_shoot"
-    ]
-}
