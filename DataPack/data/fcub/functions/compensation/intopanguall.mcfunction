@@ -9,31 +9,6 @@
 #还原背包
 	function fcub:feature/inventory/restore
 #补偿
-	#保底
-		#梦盘
-			#始皇陵
-				scoreboard players set @s instance1_chest 14
-			#火焰魔王的巢穴
-				scoreboard players set @s instance2_chest 14
-			#镇妖塔地上层
-				scoreboard players set @s instance3_chest 14
-			#镇妖塔地下层
-				scoreboard players set @s instance3_0_chest 14
-			#哭声回荡的山谷
-				scoreboard players set @s instance4_chest 14
-			#圣山
-				scoreboard players set @s instance5_chest 14
-		#罪如歌
-			#冰霜巨龙的巢穴
-				scoreboard players set @s ice_chest 14
-			#千丝谷尽头
-				scoreboard players set @s fire_chest 14
-			#梦魇幻境
-				scoreboard players set @s dream_chest 14
-			#历史缝隙
-				scoreboard players set @s dark_chest 14
-			#悟道之战
-				scoreboard players set @s fairy_chest 14
 	#钱款
 		#基值
 			scoreboard players operation @s element_money = @s fcub_comp_backup_level

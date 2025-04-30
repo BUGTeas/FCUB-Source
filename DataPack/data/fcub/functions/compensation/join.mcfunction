@@ -13,7 +13,8 @@
 #设置末影箱状态
 	scoreboard players set @s screen -1
 #暂时清空背包
-	function fcub:guide/inventory_clear
+	function fcub:feature/inventory/clear
+	tellraw @s {"text":"您的背包被暂时清空， 重新进入大陆后自动恢复。", "color":"gold"}
 #传送到提示区
 	tp @s 1308 69 42 180 0
 	spawnpoint @s 1308 69 42 180
