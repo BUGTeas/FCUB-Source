@@ -3,8 +3,9 @@
 	scoreboard players operation @s temp /= 10 int
 	scoreboard players operation @s fcub_comp_backup_level += @s temp
 #还原等级
-	execute store result storage pcub:fcub compensation.temp.levels int 1 run scoreboard players get @s fcub_comp_backup_level
-	function fcub:compensation/xp with storage pcub:fcub compensation.temp
+	scoreboard players operation @s exp_level_from_score_temp = @s fcub_comp_backup_level
+	function fcub:feature/exp_level_from_score/append
+	scoreboard players reset @s exp_level_from_score_temp
 #还原背包
 	function fcub:feature/inventory/restore
 #补偿

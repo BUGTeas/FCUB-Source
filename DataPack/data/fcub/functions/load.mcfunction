@@ -33,3 +33,6 @@ scoreboard objectives add fcub_comp_race2 dummy
 scoreboard objectives add fcub_comp_chest_unlock dummy
 scoreboard objectives add fcub_comp_test_restore dummy
 scoreboard objectives add fcub_comp_update dummy
+
+# 从记分板设置等级
+scoreboard objectives add exp_level_from_score_temp dummy
