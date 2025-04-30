@@ -30,8 +30,6 @@ function announce:work
 scoreboard objectives add fcub_compensation dummy
 scoreboard objectives add fcub_comp_backup_level dummy
 scoreboard objectives add fcub_comp_race2 dummy
-scoreboard objectives add fcub_comp_chest_unlock dummy
-scoreboard objectives add fcub_comp_test_restore dummy
 scoreboard objectives add fcub_comp_update dummy
 
 # 从记分板设置等级

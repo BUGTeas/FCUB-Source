@@ -20,4 +20,3 @@ execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chest
 execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:19b}] run scoreboard players set @s chests_enabled 20
 execute if data entity @s EnderItems[{tag:{clickable:1,data:{}}}].tag.data.chests[{Slot:20b}] run scoreboard players set @s chests_enabled 21
 tellraw @s {"text":"已恢复您的钱庄末影箱解锁空间！"}
-scoreboard players set @s fcub_comp_chest_unlock 1

@@ -46,5 +46,3 @@
     execute if score @s zhan_test_all matches 1 run scoreboard players set @s check_race_test 1
 #更新菜单书
 	scoreboard players set @s[scores={test_bless=10..}] temp 1
-#设置状态
-    scoreboard players set @s fcub_comp_test_restore 1
