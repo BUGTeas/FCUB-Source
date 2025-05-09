@@ -34,3 +34,6 @@ scoreboard objectives add fcub_comp_update dummy
 
 # 从记分板设置等级
 scoreboard objectives add exp_level_from_score_temp dummy
+
+# 武器变更检测
+scoreboard objectives add fcub_last_weapon_rare dummy
