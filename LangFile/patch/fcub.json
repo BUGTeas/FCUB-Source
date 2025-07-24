@@ -52,6 +52,13 @@
 		},
 		"base":{},
 		"conversion":{
+			"pl.spsign.honor_exchange22.text2":"§5城东乾府-钥匙出售",
+			"pl.spsign.honor_exchange22.text3": "§5400点功勋值§9§l不限购",
+			"pl.spsign.honor_exchange22.reads":"§6幻域无界宅邸不直接出售, 每人都可以不限次购买 2 把宅邸的钥匙。",
+			"pl.spsign.honor_exchange23.text2":"§5城东坤府-钥匙出售",
+			"pl.spsign.honor_exchange23.text3": "§5400点功勋值§9§l不限购",
+			"pl.spsign.honor_exchange23.reads":"§6幻域无界宅邸不直接出售, 每人都可以不限次购买 2 把宅邸的钥匙。",
+
 			"fcub.bedrock.player": "§a[基岩]§e ",
 
 			"fcub.linkdata.error.linkSelf": "§c不能和自己绑定哦",
@@ -93,8 +100,8 @@
 			"fcub.guide.trade.info.sign.text4": "然后重新进入服务器"
 		},
 		"base":{
-			"fcub.resCheck.v2.0.0.java.title":"%s",
-			"fcub.resCheck.v2.0.0.java.subtitle":"%s",
+			"fcub.resCheck.v2.0.1.java.title":"%s",
+			"fcub.resCheck.v2.0.1.java.subtitle":"%s",
 
 			"fcub.guide.trade.info.sign.text1": "",
 			"fcub.guide.trade.info.sign.text2": "",
@@ -108,7 +115,7 @@
 			"pl.sign.training_job2_15.1.text4":"",
 			"pl.info.instance5.end2":"§6虽然四圣兽事件终于落幕了，但是你总觉得整件事似乎另有隐情",
 
-			"fcub.resCheck.v2.0.0.java.message":"专用资源包已是最新版本！",
+			"fcub.resCheck.v2.0.1.java.message":"专用资源包已是最新版本！",
 			"fcub.joinError.java.title":"玩家配置错误",
 			"fcub.joinError.java.subtitle":"请退出重进以恢复正常",
 			"fcub.joinError.java.message":"\n由于您被误判为基岩版玩家，\n导致配置出错。\n这会影响到您的正常游戏，\n需要退出重新进入才能恢复正常。\n",
@@ -122,11 +129,7 @@
 			"fcub.menu.disabled":"§8【本条目未启用】§r\n",
 			"fcub.menu.more":"\n如需调整连续投掷和按住潜行发动技能，请输入命令 “/pcub” 了解更多。",
 			"fcub.menu.element":"§4【补领便携元素银行菜单】§r\n",
-			"fcub.menu.element.tips":"可以在这里存放五大元素，节省背包空间。\n由 暁山水鏡 创作的公开扩展「便携元素银行」实现。",
-			"fcub.menu.dark_tag":"§4【补领诡秘挑战工具菜单】§r\n",
-			"fcub.menu.skin":"§4【修复基岩版皮肤显示】§r\n",
-			"fcub.menu.skin.tips":"如果您通过 LittleSkin 登录进服，且希望基岩版玩家可以看见你的皮肤，请点击此按钮进行修复。\n§7（正版登录无需使用）",
-			"fcub.menu.chest_count":"§4【查看各副本开箱次数】§r\n"
+			"fcub.menu.element.tips":"可以在这里存放五大元素，节省背包空间。\n由 暁山水鏡 创作的公开扩展「便携元素银行」实现。"
 		},
 		"tw":{},
 		"hk":{}
