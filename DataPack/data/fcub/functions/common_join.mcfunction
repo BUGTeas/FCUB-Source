@@ -4,6 +4,8 @@
 #欢迎提示
     tellraw @s [{"color":"#ffaa00","bold":false,"text":"幻域无界•盘灵古域互通 (梦回盘灵)  "},{"color":"gray","bold":false,"text":"官方群聊: 490989498"}]
     execute as @s[gamemode=survival] run gamemode adventure
+    # 第一次进服欢迎提示
+    execute unless score @s player_online matches 1.. run function fcub:welcome/check
 #玩家补偿
     execute unless score @s fcub_compensation matches 1.. run scoreboard players set @s[tag=!finish_select] fcub_compensation 3
     execute unless score @s fcub_compensation matches 2.. run function fcub:compensation/join
