@@ -7,8 +7,6 @@
 	attribute @s[scores={race=0,ex_shen=1}] minecraft:generic.armor_toughness modifier add 0-0-0-2-0 "神族支线奖励-韧性" 1 add
 	attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-2-3
 	attribute @s[scores={race=3,ex_zhan=1}] minecraft:generic.attack_damage modifier add 0-0-0-2-3 "战神族支线奖励-近战攻击" 1 add
-	# 设置补给时间
-	scoreboard players set @s supply5ticks 36000
 	# 清空到达标记
 	scoreboard players set @s dragon_check 0
 	scoreboard players set @s tiger_check 0
