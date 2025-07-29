@@ -121,6 +121,13 @@
       
       {
          "predicate": {
+             "custom_model_data": 72
+          },
+         "model": "jg:item/brush"
+      },
+      
+      {
+         "predicate": {
             "custom_model_data": 200
          },
          "model": "xsj:item/qiang"
