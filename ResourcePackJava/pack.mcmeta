@@ -23,24 +23,39 @@
 	"overlays": {
 		"entries": [
 			{
-				"formats": [ 16, 999 ],
-				"directory": "16_and_newer",
-				"备注": "1.20.2 UI 纹理拆分"
+				"备注": "(23w31a) 1.20.2 UI 纹理拆分",
+				"formats": [ 16, 64 ],
+				"directory": "16_and_newer"
 			},
 			{
-				"formats": [ 20, 999 ],
-				"directory": "20_and_newer",
-				"备注": "1.20.3 新版蝙蝠纹理"
+				"备注": "(23w43a) 1.20.3 新版蝙蝠纹理",
+				"formats": [ 20, 64 ],
+				"directory": "20_and_newer"
 			},
 			{
-				"formats": [ 22, 999 ],
-				"directory": "22_and_newer",
-				"备注": "1.20.3 草贴图引用变更"
+				"备注": "(1.20.3-pre1) 1.20.3 草贴图引用变更",
+				"formats": [ 22, 64 ],
+				"directory": "22_and_newer"
 			},
 			{
-				"formats": [ 37, 999 ],
-				"directory": "37_and_newer",
-				"备注": "1.21.2 盔甲贴图路径变更"
+				"备注": "(24w33a) 1.21.2 火把模型变更",
+				"formats": [ 35, 64 ],
+				"directory": "35_and_newer"
+			},
+			{
+				"备注": "(24w36a) 1.21.2 盔甲贴图路径变更",
+				"formats": [ 37, 64 ],
+				"directory": "37_and_newer"
+			},
+			{
+				"备注": "(24w38a) 1.21.2 红石火把模型变更",
+				"formats": [ 39, 64 ],
+				"directory": "39_and_newer"
+			},
+			{
+				"备注": "(1.21.2-pre1) 1.21.2 空氧气泡",
+				"formats": [ 41, 64 ],
+				"directory": "41_and_newer"
 			}
 		]
 	}
