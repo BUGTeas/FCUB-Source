@@ -11,3 +11,5 @@
     execute unless score @s fcub_compensation matches 2.. run function fcub:compensation/join
 #末影箱初始化
     execute unless data entity @s EnderItems[{Slot:0b}] unless data entity @s EnderItems[{Slot:9b}] run item replace entity @s enderchest.0 with minecraft:gray_stained_glass_pane{clickable:1,reset_self_id:1,HideFlags:63,display:{Name:'{"translate":"pl.chest_menu.nothing"}'}}
+#清除画本导致的不应有的锻造分数
+    scoreboard players set @p dzsuccess 0
