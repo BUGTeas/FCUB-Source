@@ -86,7 +86,7 @@ public class FCUBListener implements Listener {
         Set<String> tags = player.getScoreboardTags();
         // 发送退出消息
         if (Bukkit.getServer().getOnlinePlayers().size() == 1) {
-            Bukkit.getLogger().info("所有玩家已退出！");
+            Bukkit.getLogger().info("所有玩家已退出");
         } else if (!tags.contains("hide_join_msg")) {
             joinQuitMessage(player, tags.contains("player_bedrock"), "left");
         }
