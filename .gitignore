@@ -5,8 +5,14 @@
 # 语言文件
 /ResourcePackJava/assets/*/lang/*.json
 /ResourcePack/texts/*.lang
+
+# 来自盘灵古域资源包综合优化补丁（以下文件为 Java 版资源包所需，但不纳入本仓库管理）
+# 第一视角半透明火焰
+/ResourcePackJava/assets/minecraft/textures/block/fire_*.png*
 # 材质向上兼容
 /ResourcePackJava/*_and_newer
+/ResourcePackJava/assets/minecraft/textures/gui/icons.png*
+/ResourcePackJava/assets/minecraft/textures/gui/slider.png*
+/ResourcePackJava/assets/minecraft/textures/gui/widgets.png*
 /ResourcePackJava/assets/minecraft/textures/gui/title/background
-/ResourcePackJava/assets/minecraft/textures/gui/title/edition.png.mcmeta
-/ResourcePackJava/assets/minecraft/textures/gui/title/minecraft.png.mcmeta
+/ResourcePackJava/assets/minecraft/textures/gui/title/minecraft.png*
