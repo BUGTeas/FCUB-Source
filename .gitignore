@@ -1,8 +1,8 @@
 # 最终成品文件
 /*.mcpack
 /*.zip
-# 软链接内容
-# 语言文件
+
+# 成品语言文件
 /ResourcePackJava/assets/*/lang/*.json
 /ResourcePack/texts/*.lang
 

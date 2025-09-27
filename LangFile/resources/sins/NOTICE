@@ -1,0 +1,6 @@
+请将 罪如歌 资源包中的 `assets` 文件夹放到这里，以供转换工具读取。就像这样：
+sins
+ ├─assets/
+ ├─pack.png
+ ├─pack.mcmeta
+ └─NOTICE
