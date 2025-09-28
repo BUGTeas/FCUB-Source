@@ -40,15 +40,17 @@
 
 ## 打包基岩端资源包
 
-将生成的 `LangFile/fcub/texts` 文件夹合并到 `ResourcePack/texts`，然后将 `ResourcePack` 目录中的所有文件打包压缩，改后缀为 `.mcpack` 即可直接导入到基岩版客户端中
+将生成的 `LangFile/fcub/texts` 文件夹合并到 `ResourcePack/texts`，然后将 `ResourcePack` 目录中的所有文件打包压缩，改后缀为 `.mcpack` 即可直接导入到基岩版客户端中。
 
-如需在服务端加载，将其放入 `plugins/Geyser-Spigot/packs` 目录下即可。在官方版本中，它被命名为 `FCUBPack.zip`。
+将许可证文件 `LICENSE` 放入，即可作为成品资源包。如需在服务端加载，将其放入 `plugins/Geyser-Spigot/packs` 目录下即可。在官方版本中，它被命名为 `FCUBPack.zip`。
 
 
 
 ## 打包 Java 端资源包
 
-将生成的 `LangFile/fcub-java/assets` 文件夹合并到 `ResourcePackJava/assets`。将 `ResourcePackJava` 放入客户端资源包文件夹中即可加载。将其中的所有文件打包压缩即可作为成品。
+将生成的 `LangFile/fcub-java/assets` 文件夹合并到 `ResourcePackJava/assets`。将 `ResourcePackJava` 放入客户端资源包文件夹中即可加载。
+
+将其中的所有文件打包压缩，并将许可证文件 `LICENSE` 放入，即可作为成品资源包。
 
 
 
