@@ -59,6 +59,8 @@
 			"pl.spsign.honor_exchange23.text3": "§5400点功勋值§9§l不限购",
 			"pl.spsign.honor_exchange23.reads":"§6幻域无界宅邸不直接出售, 每人都可以不限次购买 2 把宅邸的钥匙。",
 
+			"pl.lore.enhance.38":"§c[杀气箭] §2基础箭矢强度§b+2§2,不再消耗(弩除外)箭支",
+
 			"fcub.bedrock.player": "§a[基岩]§e ",
 
 			"fcub.linkdata.error.linkSelf": "§c不能和自己绑定哦",
