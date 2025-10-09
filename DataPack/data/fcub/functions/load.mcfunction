@@ -34,3 +34,7 @@ scoreboard objectives add fcub_comp_update dummy
 
 # 从记分板设置等级
 scoreboard objectives add exp_level_from_score_temp dummy
+
+# 重华晶冷却刷新优化
+scoreboard objectives add fcub_using_tpstone minecraft.used:minecraft.warped_fungus_on_a_stick ["重华晶使用标记"]
+scoreboard objectives add fcub_tpstone_resetcool_timer dummy ["重华晶刷新冷却等待确认"]
