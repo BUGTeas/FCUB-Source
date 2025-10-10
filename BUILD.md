@@ -23,7 +23,7 @@
 1. 进入 `LangFile` 目录
 3. 准备 `罪如歌材质包`，将其中 `assets` 文件夹放到 `resources/sins` 目录下
 2. 准备 `panling1.20-资源包-1.1.0b.zip`，将其中 `assets` 文件夹解压到 `resources/panling` 目录下
-4. 准备 `万通资源包(beta2.9X.177).zip`，将其中 `assets` 文件夹解压到 `resources/sins` 目录下
+4. 准备 `万通资源包(beta2.9X.177).zip`，将其中 `assets` 文件夹解压到 `resources/xsj` 目录下
 5. 安装依赖项：
    - (必要) 语言文件生成工具，可通过下方任一方式安装：
      - Gitee：`npm install git+https://gitee.com/BugTeaON/pcub-locale#v2`
