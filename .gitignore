@@ -12,8 +12,6 @@
 /ResourcePackJava/assets/minecraft/textures/block/fire_*.png*
 # 材质向上兼容
 /ResourcePackJava/*_and_newer
-/ResourcePackJava/assets/minecraft/textures/gui/icons.png*
 /ResourcePackJava/assets/minecraft/textures/gui/slider.png*
 /ResourcePackJava/assets/minecraft/textures/gui/widgets.png*
-/ResourcePackJava/assets/minecraft/textures/gui/title/background
 /ResourcePackJava/assets/minecraft/textures/gui/title/minecraft.png*
