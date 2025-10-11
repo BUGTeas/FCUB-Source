@@ -18,13 +18,13 @@
 	},
 	"bedrock":{
 		"fallback":{
-			"pack.name":"§h幻域无界专用资源包 v1.2",
-			"pack.description":"§c§l禁止用于其他地图！ §r仅限盘灵无界互通服务端使用！"
+			"pack.name":"§h幻域无界专用资源包 v1.2.1",
+			"pack.description":"适用于幻域无界服务器/部署套件"
 		},
 		"base":{},
 		"conversion":{
-			"pack.name":"§h幻域无界专用资源包 v1.2",
-			"pack.description":"§c§l禁止用于其他地图！ §r仅限盘灵无界互通服务端使用！",
+			"pack.name":"§h幻域无界专用资源包 v1.2.1",
+			"pack.description":"适用于幻域无界服务器/部署套件",
 			"fcub.menu.get_element.0":"§8此条目未开启",
 			"fcub.menu.get_element.1":"§4补领便携元素银行菜单",
 			"fcub.menu.get_dark_fight.0":"§8此条目未开启",
@@ -102,8 +102,8 @@
 			"fcub.guide.trade.info.sign.text4": "然后重新进入服务器"
 		},
 		"base":{
-			"fcub.resCheck.v2.2.0.java.title":"%s",
-			"fcub.resCheck.v2.2.0.java.subtitle":"%s",
+			"fcub.resCheck.v5.0.0-beta0.java.title":"%s",
+			"fcub.resCheck.v5.0.0-beta0.java.subtitle":"%s",
 
 			"fcub.guide.trade.info.sign.text1": "",
 			"fcub.guide.trade.info.sign.text2": "",
@@ -116,7 +116,7 @@
 			"pl.sign.training_job2_15.1.text3":"可以自由移动丹药",
 			"pl.sign.training_job2_15.1.text4":"",
 			"pl.info.instance5.end2":"§6虽然四圣兽事件终于落幕了，但是你总觉得整件事似乎另有隐情",
-			"pl.info.newest_version": "§b§l正在使用幻域无界专用资源包 v2.2.0",
+			"pl.info.newest_version": "§b§l正在使用幻域无界专用资源包 v5.0.0-beta0\n§e在其它地方使用此包可能会产生冲突！",
 
 			"dark.fight.tag.list":"§a● §l挑战列表\n",
 			"dark.fight.tag.all.word":"单击显示此页面到聊天栏\n",
@@ -151,7 +151,7 @@
 			"dark.fight.tag.16":"§a北兵·I\n",
 			"dark.fight.tag.show":"§a§l【查看当前挑战等级】",
 
-			"fcub.resCheck.v2.2.0.java.message":"专用资源包已是最新版本 (v2.2.0) %s",
+			"fcub.resCheck.v5.0.0-beta0.java.message":"专用资源包已是最新版本 (v5.0.0-beta0) %s",
 			"fcub.joinError.java.title":"玩家配置错误",
 			"fcub.joinError.java.subtitle":"请退出重进以恢复正常",
 			"fcub.joinError.java.message":"\n由于您被误判为基岩版玩家，\n导致配置出错。\n这会影响到您的正常游戏，\n需要退出重新进入才能恢复正常。\n",
